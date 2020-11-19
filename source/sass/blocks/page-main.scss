@@ -1,0 +1,35 @@
+.page-main__background-wrapper {
+  background-color: rgba($green, 0.85);
+  // background-image: url('../../img/page-main-bg-image.jpg');
+}
+
+.page-main__text-wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.page-main__title {
+  @include fonts(400, 36px, 36px, $white);
+  text-align: center;
+  margin: 0;
+  padding-top: 25px;
+}
+
+.page-main__description {
+  @include fonts;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 164px;
+  margin-bottom: 135px;
+  margin-top: 25px;
+}
+
+.page-main__catalog {
+  @include fonts(400, 14px, 18px, $white);
+  background-color: $green;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}

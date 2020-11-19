@@ -1,0 +1,8 @@
+.example-table__data {
+  @include fonts(400, 24px, 24px, $black);
+}
+
+.example-table__parameters {
+  font-size: 12px;
+  line-height: 12px;
+}
