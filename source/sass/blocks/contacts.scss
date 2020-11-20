@@ -1,0 +1,14 @@
+.contacts__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.contacts__slogan {
+  @include fonts(400, 16px, 18px, $black-light);
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  color: $grey;
+  line-height: 20px;
+}

@@ -1,0 +1,28 @@
+.plan-item {
+  background-color: $grey-extra-light;
+}
+
+.plan-item__title {
+  @include fonts(400, 24px, 37px, $black);
+  text-transform: uppercase;
+  padding-top: 30px;
+  margin-top: 30px;
+  margin-bottom: 29px;
+  margin-left: 91px;
+}
+
+.plan-item__description {
+  padding-bottom: 23px;
+  margin-top: 0;
+  margin-left: 20px;
+  margin-right: 33px;
+  border-bottom: 1px solid $grey-dark;
+}
+
+.plan-item__catalog {
+  @include fonts(400, 16px, 18px, $black);
+  text-transform: uppercase;
+  display: block;
+  margin-left: 19px;
+  padding-bottom: 22px;
+}
