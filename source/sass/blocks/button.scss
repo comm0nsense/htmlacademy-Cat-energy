@@ -1,7 +1,7 @@
 .button {
+  @include fonts(400, 16px, 20px, $white);
   border: none;
   background-color: $green;
-  @include fonts(400, 16px, 20px, $white);
   text-transform: uppercase;
   text-align: center;
   display: block;
