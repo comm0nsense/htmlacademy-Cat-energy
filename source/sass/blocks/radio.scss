@@ -1,0 +1,34 @@
+.radio__label {
+  @include fonts(400, 16px, 18px, $balck-lighter);
+  text-transform: uppercase;
+}
+
+.radio__item {
+  margin-bottom: 24px;
+  padding-left: 65px;
+  position: relative;
+}
+
+.radio__label::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $grey-medium;
+  border-radius: 50%;
+  box-sizing: border-box;
+  top: -10px;
+  left: 10px;
+}
+
+.radio__input:checked + .radio__label::after {
+  content: "";
+  position: absolute;
+  width: 13.5px;
+  height: 13.5px;
+  background-color: $green;
+  border-radius: 50%;
+  box-sizing: border-box;
+  left: 19px;
+  top: -1px;
+}

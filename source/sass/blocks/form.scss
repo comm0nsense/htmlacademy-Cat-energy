@@ -2,6 +2,11 @@
   border: 0;
 }
 
+.form__legend {
+  @include fonts(400, 24px, 26px, $black);
+  margin-bottom: 32px;
+}
+
 .form__label {
   @include fonts(400, 16px, 18px, $grey);
   text-transform: uppercase;
@@ -10,4 +15,15 @@
 .form__input {
   @include fonts(400, 16px, 18px, $grey);
   text-transform: uppercase;
+}
+
+.form__list {
+  list-style: none;
+  padding: 0;
+}
+
+.form__footnote {
+  font-size: 14px;
+  line-height: 16px;
+  color: $black;
 }

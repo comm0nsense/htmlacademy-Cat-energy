@@ -24,16 +24,6 @@
   margin-top: 25px;
 }
 
-.page-main__catalog {
-  @include fonts(400, 14px, 18px, $white);
-  background-color: $green;
-  text-transform: uppercase;
-  display: block;
-  text-align: center;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
 .page-main__form-title {
   @include fonts(400, 36px, 36px, $black);
 }
