@@ -6,6 +6,12 @@
   background-color: rgba($green, 0.85);
 }
 
+.page-main__can-wrapper {
+  background-image: url("../img/index-can-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .page-main__title {
   @include fonts(400, 36px, 36px, $white);
   text-align: center;
