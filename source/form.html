@@ -17,21 +17,21 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
-            <a href="">Главная</a>
+            <a class="main-nav__item-link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Каталог продукции</a>
+            <a class="main-nav__item-link" href="index.html" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Продбор программы</a>
+            <a class="main-nav__item-link main-nav__item-link--active">Продбор программы</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="page-main__title">Подбор программы</h1>
-    <p class="page-main__description">
+    <h1 class="page-main__form-title">Подбор программы</h1>
+    <p class="page-main__form-description">
       Заполните анкету, и мы подберем программу питания для вашего кота
     </p>
     <form class="form" method="post" action="https://echo.htmlacademy.ru">
@@ -39,16 +39,16 @@
         <fieldset class="form__fieldset">
           <legend class="visually-hidden">Параметры кота</legend>
           <div class="form__item-wrapper">
-            <label class="form__label" for="name-field">Имя:*</label>
+            <label class="form__label" for="name-field">Имя:* &nbsp;</label>
             <input class="form__input" type="text" name="name" id="name-field" placeholder="Барсик" required>
           </div>
           <div class="form__item">
-            <label class="form__label" for="weight-field">Вес (кг):*</label>
+            <label class="form__label" for="weight-field">Вес (кг):*&nbsp;</label>
             <input class="form__input form__input--number" type="number" name="weight" id="weight-field" placeholder="7"
               required>
           </div>
           <div class="form__item-wrapper">
-            <label class="form__label" for="age-field">Возраст (лет):*</label>
+            <label class="form__label" for="age-field">Возраст (лет):*&nbsp;</label>
             <input class="form__input form__input--number" type="number" name="age" id="age-field" placeholder="7">
           </div>
         </fieldset>
@@ -73,12 +73,12 @@
       <fieldset class="form__fieldset">
         <legend class="form__legend">Контактные данные (владельца кота)</legend>
         <div class="form__item">
-          <label class="form__label" for="name">E-mail:*</label>
+          <label class="form__label" for="name">E-mail:*&nbsp;</label>
           <input class="form__input form__input form__input--email" type="email" name="user-email" id="name"
             placeholder="kuklachev@gmail.com" required>
         </div>
         <div class="form__item-wrapper">
-          <label class="form__label" for="tel">Телефон:*</label>
+          <label class="form__label" for="tel">Телефон:*&nbsp;</label>
           <input class="form__input form__input form__input--tel" type="tel" name="user-tel" id="tel"
             placeholder="8(960) 900-60-90" required>
         </div>

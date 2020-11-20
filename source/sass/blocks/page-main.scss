@@ -16,7 +16,7 @@
 }
 
 .page-main__description {
-  @include fonts;
+  @include fonts(400, 14px, 14px, $white);
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 164px;
@@ -32,4 +32,13 @@
   text-align: center;
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+.page-main__form-title {
+  @include fonts(400, 36px, 36px, $black);
+}
+
+.page-main__form-description {
+  @include fonts(400, 14px, 14px, $black);
+  text-transform: uppercase;
 }

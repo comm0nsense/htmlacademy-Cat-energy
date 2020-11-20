@@ -1,0 +1,13 @@
+.form__fieldset {
+  border: 0;
+}
+
+.form__label {
+  @include fonts(400, 16px, 18px, $grey);
+  text-transform: uppercase;
+}
+
+.form__input {
+  @include fonts(400, 16px, 18px, $grey);
+  text-transform: uppercase;
+}
