@@ -15,6 +15,16 @@
 .form__input {
   @include fonts(400, 16px, 18px, $grey);
   text-transform: uppercase;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border: 1px solid $grey-lighter;
+  margin-bottom: 13px;
+  width: 70%;
+}
+
+.form__input::placeholder {
+  @include fonts(400, 16px, 18px, $grey-rgba);
+  opacity: 1;
 }
 
 .form__list {
@@ -26,4 +36,15 @@
   font-size: 14px;
   line-height: 16px;
   color: $black;
+}
+
+/* stylelint-disable */
+.form__input--number::-webkit-outer-spin-button,
+.form__input--number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form__input--number {
+  -moz-appearance: textfield;
 }

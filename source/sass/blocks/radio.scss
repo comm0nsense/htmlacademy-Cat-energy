@@ -1,12 +1,15 @@
+
+.radio {
+  padding-left: 65px;
+  position: relative;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  vertical-align: middle;
+}
+
 .radio__label {
   @include fonts(400, 16px, 18px, $balck-lighter);
   text-transform: uppercase;
-}
-
-.radio__item {
-  margin-bottom: 24px;
-  padding-left: 65px;
-  position: relative;
 }
 
 .radio__label::before {
@@ -16,19 +19,17 @@
   height: 30px;
   border: 1px solid $grey-medium;
   border-radius: 50%;
-  box-sizing: border-box;
-  top: -10px;
-  left: 10px;
+  top: -6px;
+  left: 11px;
 }
 
 .radio__input:checked + .radio__label::after {
   content: "";
   position: absolute;
-  width: 13.5px;
-  height: 13.5px;
+  width: 14px;
+  height: 14px;
   background-color: $green;
   border-radius: 50%;
-  box-sizing: border-box;
   left: 19px;
-  top: -1px;
+  top: 2px;
 }
