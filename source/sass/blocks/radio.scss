@@ -8,7 +8,7 @@
 }
 
 .radio__label {
-  @include fonts(400, 16px, 18px, $balck-lighter);
+  @include fonts(400, 16px, 18px, $black-lighter);
   text-transform: uppercase;
 }
 

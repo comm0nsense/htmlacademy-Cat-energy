@@ -1,0 +1,10 @@
+.product__title {
+  @include fonts(400, 16px, 20px, $black-lighter);
+  text-transform: uppercase;
+}
+
+.product__table-details {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
