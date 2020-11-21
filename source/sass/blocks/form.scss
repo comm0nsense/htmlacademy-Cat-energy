@@ -10,15 +10,18 @@
 .form__label {
   @include fonts(400, 16px, 18px, $grey);
   text-transform: uppercase;
+  margin-right: 16px;
 }
 
 .form__input {
   @include fonts(400, 16px, 18px, $grey);
   text-transform: uppercase;
-  padding: 13px;
+  height: 46px;
+  // display: block;
+  padding: 10px 13px;
   border: 1px solid $grey-lighter;
   margin-bottom: 13px;
-  width: 70%;
+  width: 50%;
 }
 
 .form__input::placeholder {
@@ -30,6 +33,7 @@
   padding-top: 13px;
   padding-left: 13px;
   padding-right: 13px;
+  // height: 150px;
 }
 
 .form__list {
