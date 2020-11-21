@@ -17,21 +17,21 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
-            <a href="">Главная</a>
+            <a class="main-nav__item-link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Каталог продукции</a>
+            <a class="main-nav__item-link" href="index.html" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Продбор программы</a>
+            <a class="main-nav__item-link main-nav__item-link--active">Продбор программы</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="page-main__title">Подбор программы</h1>
-    <p class="page-main__description">
+    <h1 class="page-main__form-title">Подбор программы</h1>
+    <p class="page-main__form-description">
       Заполните анкету, и мы подберем программу питания для вашего кота
     </p>
     <form class="form" method="post" action="https://echo.htmlacademy.ru">
@@ -48,26 +48,29 @@
               required>
           </div>
           <div class="form__item-wrapper">
-            <label class="form__label" for="age-field">Возраст (лет):*</label>
+            <label class="form__label" for="age-field">Возраст (лет):</label>
             <input class="form__input form__input--number" type="number" name="age" id="age-field" placeholder="7">
           </div>
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="visually-hidden">Варианты программы</legend>
-          <div class="form__item-wrapper radio">
-            <input class="radio__input visually-hidden" type="radio" name="plan" id="weight-lose-field"
-              value="weight-lose" checked>
-            <label class="radio__label" for="weight-lose-field">Похудение</label>
-          </div>
-          <div class="form__item-wrapper radio">
-            <input class="radio__input visually-hidden" type="radio" name="plan" id="weight-gain-field"
-              value="weight-gain">
-            <label class="radio__label" for="weight-gain-field">Набор массы</label>
-          </div>
-          <div class="form__item-wrapper radio">
-            <input class="radio__input visually-hidden" type="radio" name="plan" id="dont-know-field" value="dont-know">
-            <label class="radio__label" for="dont-know-field">Не знаю (нужен ваш совет)</label>
-          </div>
+          <ul class="form__list">
+            <li class="radio">
+              <input class="radio__input visually-hidden" type="radio" name="plan" id="weight-lose-field"
+                value="weight-lose" checked>
+              <label class="radio__label" for="weight-lose-field">Похудение</label>
+            </li>
+            <li class="radio">
+              <input class="radio__input visually-hidden" type="radio" name="plan" id="weight-gain-field"
+                value="weight-gain">
+              <label class="radio__label" for="weight-gain-field">Набор массы</label>
+            </li>
+            <li class="radio">
+              <input class="radio__input visually-hidden" type="radio" name="plan" id="dont-know-field"
+                value="dont-know">
+              <label class="radio__label" for="dont-know-field">Не знаю (нужен ваш совет)</label>
+            </li>
+          </ul>
         </fieldset>
       </div>
       <fieldset class="form__fieldset">
@@ -80,7 +83,7 @@
         <div class="form__item-wrapper">
           <label class="form__label" for="tel">Телефон:*</label>
           <input class="form__input form__input form__input--tel" type="tel" name="user-tel" id="tel"
-            placeholder="8(960) 900-60-90" required>
+            placeholder="8 (960) 900-60-90" required>
         </div>
       </fieldset>
       <fieldset class="form__fieldset">
@@ -93,29 +96,29 @@
       </fieldset>
       <fieldset class="form__fieldset">
         <legend class="form__legend">Дополнительно</legend>
-        <div class="form__fieldset-wrapper">
-          <div class="form__item-wrapper checkbox">
+          <ul class="form__list">
+          <li class="checkbox">
             <input class="checkbox__input visually-hidden" type="checkbox" name="sweetener" id="sweetener-field"
               checked>
             <label class="checkbox__label" for="sweetener-field">Сахарозаменитель</label>
-          </div>
-          <div class="form__item-wrapper checkbox">
+          </li>
+          <li class="checkbox">
             <input class="checkbox__input visually-hidden" type="checkbox" name="water" id="water-field">
             <label class="checkbox__label" for="water-field">Питьевая вода</label>
-          </div>
-          <div class="form__item-wrapper checkbox">
+          </li>
+          <li class="checkbox">
             <input class="checkbox__input visually-hidden" type="checkbox" name="milk" id="milk-filed">
             <label class="checkbox__label" for="milk-filed">Молоко</label>
-          </div>
-          <div class="form__item-wrapper checkbox">
+          </li>
+          <li class="checkbox">
             <input class="checkbox__input visually-hidden" type="checkbox" name="vitamins" id="vitamins-field">
             <label class="checkbox__label" for="vitamins-field">Витамины</label>
-          </div>
-        </div>
+          </li>
+        </ul>
       </fieldset>
       <button class="button button--submit" type="submit">Отправить заявку</button>
       <p>
-        <small>
+        <small class="form__foonote">
           * &mdash; Обязательные поля
         </small>
       </p>
@@ -123,9 +126,9 @@
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Наш адрес</h2>
+        <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <br>
           Санкт-Петербург</p>
-        <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
       </div>
       <a class="contacts__details" href="#">
         <img class="contacts__map" src="https://via.placeholder.com/320x362" width="360" height="362"

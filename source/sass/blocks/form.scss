@@ -1,0 +1,59 @@
+.form__fieldset {
+  border: 0;
+}
+
+.form__legend {
+  @include fonts(400, 24px, 26px, $black);
+  margin-bottom: 32px;
+}
+
+.form__label {
+  @include fonts(400, 16px, 18px, $grey);
+  text-transform: uppercase;
+  margin-right: 16px;
+}
+
+.form__input {
+  @include fonts(400, 16px, 18px, $grey);
+  text-transform: uppercase;
+  height: 46px;
+  // display: block;
+  padding: 10px 13px;
+  border: 1px solid $grey-lighter;
+  margin-bottom: 13px;
+  width: 50%;
+}
+
+.form__input::placeholder {
+  @include fonts(400, 16px, 18px, $grey-rgba);
+  opacity: 1;
+}
+
+.form__input--textarea {
+  padding-top: 13px;
+  padding-left: 13px;
+  padding-right: 13px;
+  // height: 150px;
+}
+
+.form__list {
+  list-style: none;
+  padding: 0;
+}
+
+.form__footnote {
+  font-size: 14px;
+  line-height: 16px;
+  color: $black;
+}
+
+/* stylelint-disable */
+.form__input--number::-webkit-outer-spin-button,
+.form__input--number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form__input--number {
+  -moz-appearance: textfield;
+}
