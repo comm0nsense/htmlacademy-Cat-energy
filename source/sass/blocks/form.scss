@@ -15,8 +15,7 @@
 .form__input {
   @include fonts(400, 16px, 18px, $grey);
   text-transform: uppercase;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding: 13px;
   border: 1px solid $grey-lighter;
   margin-bottom: 13px;
   width: 70%;
@@ -25,6 +24,12 @@
 .form__input::placeholder {
   @include fonts(400, 16px, 18px, $grey-rgba);
   opacity: 1;
+}
+
+.form__input--textarea {
+  padding-top: 13px;
+  padding-left: 13px;
+  padding-right: 13px;
 }
 
 .form__list {
