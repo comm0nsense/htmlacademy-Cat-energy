@@ -1,0 +1,18 @@
+.extra {
+  border-top: 1px solid $grey-medium;
+}
+
+.extra:last-child {
+  border-bottom: 1px solid $grey-medium;
+}
+
+.extra__title {
+  @include fonts(400, 16px, 16px, $black-lighter);
+  text-transform: uppercase;
+  margin-top: 14px;
+  margin-bottom: 12px;
+}
+
+.extra__detail {
+  line-height: 14px;
+}

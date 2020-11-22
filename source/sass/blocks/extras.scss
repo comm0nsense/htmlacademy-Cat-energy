@@ -1,0 +1,9 @@
+.extras__title {
+  @include fonts(400, 24px, 24px, $black);
+}
+
+.extras__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

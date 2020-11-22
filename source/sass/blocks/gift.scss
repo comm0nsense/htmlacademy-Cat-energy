@@ -1,0 +1,21 @@
+.gift {
+  background-color: $green;
+}
+
+.gift__slogan {
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  padding-top: 187px;
+  padding-bottom: 42px;
+  text-align: center;
+  position: relative;
+  margin-top: 41px;
+  margin-bottom: 33px;
+}
+
+.gift__slogan::before {
+  content: url("../img/icon_gift.svg");
+  position: absolute;
+  top: 59px;
+}
