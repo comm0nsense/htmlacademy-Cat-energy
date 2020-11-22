@@ -23,6 +23,11 @@
   margin-bottom: 25px;
 }
 
+.page-main__title--catalog {
+  @include fonts(400, 36px, 36px, $black);
+  text-align: left;
+}
+
 .page-main__description {
   @include fonts(400, 14px, 14px, $white);
   text-transform: uppercase;
