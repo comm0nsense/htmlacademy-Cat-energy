@@ -1,0 +1,44 @@
+
+.example-item {
+  background-color: $grey-medium-light;
+}
+
+.example-item__costs-title {
+  @include fonts(400, 14px, 20px, $black);
+  text-transform: uppercase;
+}
+
+.example-item__filter {
+  @include fonts(400, 16px, 20px, $black);
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .example-item__text-wrapper {
+    background-color: $white;
+  }
+
+  .example-item__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example-item__table-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example-item {
+    display: flex;
+  }
+
+  .example-item__text-wrapper {
+    background-color: $grey-medium-light;
+  }
+
+  .example-item__table-wrapper {
+    flex-direction: column;
+  }
+}

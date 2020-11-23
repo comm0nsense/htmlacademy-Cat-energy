@@ -1,40 +1,7 @@
-.page-main__image-wrapper {
-  background-image: url("../img/page-main-bg-image.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.page-main__text-wrapper {
-  background-color: rgba($green, 0.85);
-  position: relative;
-}
-
-.page-main__image-can {
-  position: absolute;
-  top: 137px;
-  left: 320px;
-}
-
-.page-main__title {
-  @include fonts(400, 36px, 36px, $white);
-  text-align: center;
-  margin: 0;
-  padding-top: 25px;
-  margin-bottom: 25px;
-}
 
 .page-main__title--catalog {
   @include fonts(400, 36px, 36px, $black);
   text-align: left;
-}
-
-.page-main__description {
-  @include fonts(400, 14px, 14px, $white);
-  text-transform: uppercase;
-  text-align: center;
-  padding-bottom: 164px;
-  margin-top: 0;
-  margin-bottom: 135px;
 }
 
 .page-main__form-title {

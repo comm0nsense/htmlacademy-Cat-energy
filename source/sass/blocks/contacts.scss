@@ -5,6 +5,8 @@
 .contacts__wrapper {
   padding-top: 28px;
   padding-bottom: 22px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .contacts__slogan {

@@ -6,3 +6,15 @@
   font-size: 12px;
   line-height: 12px;
 }
+
+@media (min-width: $tablet-width) {
+  .example-table__data {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example-table__parameters {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}

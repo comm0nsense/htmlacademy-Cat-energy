@@ -1,8 +1,12 @@
 .page-header {
   background-color: $white;
+  display: flex;
+  flex-direction: column;
 }
 
-.page-header__logo {
-  width: 280px;
-  margin: 0 auto;
+@media (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
