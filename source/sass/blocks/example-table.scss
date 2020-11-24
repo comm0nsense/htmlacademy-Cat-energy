@@ -1,3 +1,8 @@
+.example-table {
+  width: 100%;
+  text-align: center;
+}
+
 .example-table__data {
   @include fonts(400, 24px, 24px, $black);
 }

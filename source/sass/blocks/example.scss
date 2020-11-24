@@ -5,6 +5,7 @@
 .example__item-costs-title {
   @include fonts(400, 14px, 20px, $black);
   text-transform: uppercase;
+  text-align: center;
 }
 
 .example__item-filter {

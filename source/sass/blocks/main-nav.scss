@@ -16,10 +16,22 @@
 }
 
 .main-nav__item-link {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 20px;
+  @include fonts(500, 20px, 20px, $black);
   text-transform: uppercase;
-  color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-nav__item-link {
+    @include fonts(400, 18px, 24px, $black);
+  }
 }
