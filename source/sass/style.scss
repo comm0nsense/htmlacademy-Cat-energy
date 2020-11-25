@@ -4,6 +4,7 @@
 @import "global/global";
 @import "global/fonts.scss";
 @import "global/mixins.scss";
+@import "global/container.scss";
 
 // Blocks
 
@@ -12,6 +13,7 @@
 @import "blocks/logo";
 @import "blocks/main-nav";
 @import "blocks/page-main";
+@import "blocks/promo";
 @import "blocks/plans";
 @import "blocks/plan-item.scss";
 @import "blocks/heading-secondary";

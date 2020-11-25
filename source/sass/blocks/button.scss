@@ -12,6 +12,15 @@
   padding-bottom: 8px;
 }
 
+@media (min-width: $tablet-width) {
+  .button--catalog {
+    @include fonts(400, 20px, 26px, $white);
+    padding: 14px 26px;
+    display: inline-block;
+    margin-bottom: 526px;
+  }
+}
+
 .button--submit {
   padding: 7px 44px;
 }
