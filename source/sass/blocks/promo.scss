@@ -59,3 +59,9 @@
     margin-bottom: 49px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .promo__bg-color-wrapper {
+    background-color: transparent;
+  }
+}

@@ -54,6 +54,10 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__item-link {
-    @include fonts(400, 20px, 30px, $black);
+    @include fonts(400, 20px, 30px, $white);
+  }
+
+  .main-nav__item-link--active {
+    border-bottom: 2px solid $white;
   }
 }
