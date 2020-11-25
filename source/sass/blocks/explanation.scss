@@ -19,10 +19,11 @@
   .explanation__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .explanation__item {
-    width: 50%;
+    width: calc(50% - 30px);
   }
 }
 
@@ -44,6 +45,6 @@
   }
 
   .explanation__item {
-    width: 25%;
+    width: calc(25% - 60px);
   }
 }

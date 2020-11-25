@@ -55,7 +55,7 @@
 
 @media (min-width: $desktop-width) {
   .plan-item {
-    margin-right: 80px;
+    width: calc(50% - 40px);
   }
 
   .plan-item:last-child {
