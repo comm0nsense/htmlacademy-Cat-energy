@@ -13,10 +13,42 @@
   @include fonts(400, 16px, 18px, $black-light);
   text-transform: uppercase;
   margin: 0;
+  width: 50%;
 }
 
 .contacts__address {
   color: $grey;
   line-height: 20px;
   margin: 0;
+  width: 50%;
+}
+
+.contacts__map {
+  margin: 0 auto;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    margin: 0 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    position: absolute;
+    top: 95px;
+    background-color: $white;
+    margin: 0;
+    width: calc(50% - 210px);
+    justify-content: space-evenly;
+  }
+
+  .contacts__slogan {
+    width: calc(50% - 80px);
+  }
+
+  .contacts__address {
+    width: calc(50% - 80px);
+  }
 }

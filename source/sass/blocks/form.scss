@@ -1,5 +1,7 @@
 .form__fieldset {
   border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .form__legend {
@@ -24,6 +26,13 @@
   width: 50%;
 }
 
+.form__footnote {
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  color: $black;
+}
+
 .form__input::placeholder {
   @include fonts(400, 16px, 18px, $grey-rgba);
   opacity: 1;
@@ -41,10 +50,56 @@
   padding: 0;
 }
 
-.form__footnote {
-  font-size: 14px;
-  line-height: 16px;
-  color: $black;
+@media (min-width: $tablet-width) {
+  .form {
+    padding-left: 42px;
+    padding-right: 36px;
+  }
+
+  .form__fieldset--plan {
+    border: 1px solid $grey-lighter;
+  }
+
+  .form__list--checkbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .checkbox {
+    width: calc(50% - 30px);
+    // width: 342px;
+  }
+
+  .form__button-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding: 0;
+  }
+
+  .form__fieldset-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__item--contact {
+    width: calc(50% - 40px);
+  }
+
+  .checkbox {
+    width: calc(25% - 60px);
+  }
 }
 
 /* stylelint-disable */
@@ -57,3 +112,4 @@
 .form__input--number {
   -moz-appearance: textfield;
 }
+

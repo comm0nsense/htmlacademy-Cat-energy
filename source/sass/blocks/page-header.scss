@@ -22,7 +22,7 @@
     background: transparent;
   }
 
-  .page-header {
+  .page-header--index {
     background-image: url("../img/index-background-desktop.jpg");
     background-repeat: no-repeat;
     background-position: right;
@@ -30,7 +30,7 @@
     // width: 50%;
   }
 
-  .page-header__cat-wrapper {
+  .page-header--index__cat-wrapper {
     background: linear-gradient(to right, $white 50%, $green-transparent 50%);
   }
 }

@@ -37,6 +37,11 @@
 
   .main-nav__item {
     border-top: none;
+    margin-left: 35px;
+  }
+
+  .main-nav__item:first-child {
+    margin-left: 0;
   }
 
   .main-nav__item:last-child {
@@ -54,7 +59,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__item-link {
-    @include fonts(400, 20px, 30px, $white);
+    @include fonts(400, 20px, 30px, $black);
   }
 
   .main-nav__item-link--active {
