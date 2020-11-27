@@ -100,6 +100,14 @@
   .checkbox {
     width: calc(25% - 60px);
   }
+
+  .form__fieldset--cat {
+    width: calc(50% - 40px);
+  }
+
+  .form__fieldset--plan {
+    width: calc(50% - 40px);
+  }
 }
 
 /* stylelint-disable */
