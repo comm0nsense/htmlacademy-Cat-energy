@@ -53,3 +53,13 @@
   color: $grey;
   margin-bottom: 21px;
 }
+
+@media (min-width: $tablet-width) {
+  .product {
+    border: none;
+  }
+
+  .product:last-child {
+    border: none;
+  }
+}

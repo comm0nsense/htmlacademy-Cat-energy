@@ -3,3 +3,21 @@
   padding: 0;
   margin: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__item {
+    width: calc(25% - 56px);
+  }
+}
