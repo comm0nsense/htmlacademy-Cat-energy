@@ -4,22 +4,10 @@
   padding: 0 20px;
 }
 
-.container__main-nav {
-  max-width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 @media (min-width: $tablet-width) {
   .container {
     max-width: 768px;
     padding: 0 30px;
-  }
-
-  .container__main-nav {
-    padding: 0;
-    margin: 0;
-    width: auto;
   }
 }
 
@@ -27,5 +15,9 @@
   .container {
     max-width: 1280px;
     padding: 0 30px;
+  }
+
+  .container--footer-contacts {
+    position: relative;
   }
 }

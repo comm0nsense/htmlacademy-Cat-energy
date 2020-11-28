@@ -12,3 +12,15 @@
   @include fonts(400, 14px, 14px, $black);
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main__form-description {
+    padding-left: 42px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__form-description {
+    padding: 0;
+  }
+}

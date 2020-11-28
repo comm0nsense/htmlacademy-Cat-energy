@@ -22,7 +22,21 @@
 }
 
 .button--submit {
-  padding: 7px 44px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .button--submit {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button--submit {
+    width: calc(50% - 180px);
+  }
 }
 
 .button--show-all {
