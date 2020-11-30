@@ -30,10 +30,10 @@
   }
 
   .extras__list {
-    width: 60%;
+    @include col-3;
   }
 
   .extras__gift-wrapper {
-    width: 20%;
+    @include col-1;
   }
 }
