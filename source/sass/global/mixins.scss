@@ -11,16 +11,16 @@
 
 //Columns
 
-$gap: 80px;
+//$gap: 80px;
 
-@mixin col-1 {
+@mixin col-1 ($gap) {
   width: calc(100% / 4 - #{$gap} * 3 / 4);
 }
 
-@mixin col-2 {
+@mixin col-2 ($gap) {
   width: calc((100% / 4 - #{$gap} * 3 / 4) * 2 + #{$gap});
 }
 
-@mixin col-3 {
+@mixin col-3 ($gap) {
   width: calc((100% / 4 - #{$gap} * 3 / 4) * 3 + #{$gap} * 2);
 }

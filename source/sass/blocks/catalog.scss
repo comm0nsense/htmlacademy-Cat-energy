@@ -12,13 +12,22 @@
   }
 
   .catalog__item {
-    width: calc(50% - 30px);
+    @include col-2(60px);
+    margin-right: 60px;
+  }
+
+  .catalog__item:nth-child(2n) {
+    margin-right: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog__item {
-    width: calc(25% - 60px);
+    @include col-1(80px);
+    margin-right: 80px;
+  }
+
+  .catalog__item:nth-child(2n) {
     margin-right: 80px;
   }
 

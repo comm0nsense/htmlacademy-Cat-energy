@@ -18,7 +18,8 @@
   }
 
   .extras__button {
-    margin: 28px 30px;
+    // margin: 28px 30px;
+    @include col-1(80px);
   }
 }
 
@@ -30,10 +31,10 @@
   }
 
   .extras__list {
-    @include col-3;
+    @include col-3(80px);
   }
 
   .extras__gift-wrapper {
-    @include col-1;
+    @include col-1(80px);
   }
 }
