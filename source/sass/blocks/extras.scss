@@ -7,3 +7,34 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .extras__item {
+    border-top: 1px solid $grey-medium;
+  }
+
+  .extras__title {
+    margin-left: 38px;
+  }
+
+  .extras__button {
+    // margin: 28px 30px;
+    @include col-1(80px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extras__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .extras__list {
+    @include col-3(80px);
+  }
+
+  .extras__gift-wrapper {
+    @include col-1(80px);
+  }
+}

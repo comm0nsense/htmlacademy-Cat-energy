@@ -1,7 +1,26 @@
+
+//Fonts
+
 @mixin fonts ($font-weight:400, $font-size: 14px, $line-heght: 14px, $font-color: $grey) {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: $font-weight;
   font-size: $font-size;
   line-height: $line-heght;
   color: $font-color;
+}
+
+//Columns
+
+//$gap: 80px;
+
+@mixin col-1 ($gap) {
+  width: calc(100% / 4 - #{$gap} * 3 / 4);
+}
+
+@mixin col-2 ($gap) {
+  width: calc((100% / 4 - #{$gap} * 3 / 4) * 2 + #{$gap});
+}
+
+@mixin col-3 ($gap) {
+  width: calc((100% / 4 - #{$gap} * 3 / 4) * 3 + #{$gap} * 2);
 }
