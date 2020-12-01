@@ -8,8 +8,9 @@
 }
 
 .button--catalog {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  @include fonts(400, 14px, 18px, $white);
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
 
 @media (min-width: $tablet-width) {

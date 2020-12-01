@@ -2,6 +2,16 @@
   background-color: $grey-medium-light;
 }
 
+.example__item-title {
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 33px;
+}
+
+.example__item-description {
+  margin: 0;
+}
+
 .example__item-costs-title {
   @include fonts(400, 14px, 20px, $black);
   text-transform: uppercase;

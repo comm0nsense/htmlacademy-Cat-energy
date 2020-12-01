@@ -1,26 +1,52 @@
 .plan-item {
   background-color: $grey-extra-light;
+  margin-bottom: 20px;
+}
+
+.plan-item:last-child {
+  margin-bottom: 0;
 }
 
 .plan-item__title {
   @include fonts(400, 24px, 37px, $black);
   text-transform: uppercase;
   padding-top: 30px;
-  margin-top: 30px;
-  margin-bottom: 29px;
-  margin-left: 91px;
+  padding-bottom: 29px;
+  padding-left: 91px;
+  padding-right: 20px;
+  margin: 0;
+  position: relative;
+}
+
+.plan-item__title--weight-lose::before {
+  position: absolute;
+  content: url("https://via.placeholder.com/50x53");
+  width: 50px;
+  height: 53px;
+  left: 22px;
+  top: 21px;
+}
+
+.plan-item__title--weight-gain::before {
+  position: absolute;
+  content: url("https://via.placeholder.com/67x50");
+  width: 67px;
+  height: 50px;
+  left: 13px;
+  top: 24px;
 }
 
 .plan-item__description {
   padding-bottom: 23px;
+  margin-bottom: 18px;
   margin-top: 0;
   margin-left: 20px;
-  margin-right: 33px;
+  margin-right: 20px;
   border-bottom: 1px solid $grey-dark;
 }
 
 .plan-item__catalog {
-  @include fonts(400, 16px, 18px, $black);
+  @include fonts(400, 16px, 16px, $black);
   text-transform: uppercase;
   display: block;
   margin-left: 19px;
