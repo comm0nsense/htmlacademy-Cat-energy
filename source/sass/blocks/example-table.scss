@@ -5,6 +5,7 @@
 
 .example-table__data {
   @include fonts(400, 24px, 24px, $black);
+  text-transform: uppercase;
 }
 
 .example-table__parameters {
