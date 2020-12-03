@@ -1,16 +1,37 @@
 .example-table {
   width: 100%;
+}
+
+.example-table__data--desc {
+  font-size: 12px;
+  line-height: 12px;
   text-align: center;
 }
 
 .example-table__data {
   @include fonts(400, 24px, 24px, $black);
   text-transform: uppercase;
+  width: 50%;
 }
 
-.example-table__parameters {
-  font-size: 12px;
-  line-height: 12px;
+.example-table__data--weight {
+  padding-left: 42px;
+}
+
+.example-table__data--days {
+  padding-left: 33px;
+}
+
+.example-table__data--weight-desc {
+  padding-top: 5px;
+  padding-left: 32px;
+  padding-right: 54px;
+}
+
+.example-table__data--days-desc {
+  padding-top: 5px;
+  padding-left: 24px;
+  padding-right: 10px;
 }
 
 @media (min-width: $tablet-width) {

@@ -11,17 +11,23 @@
 .example__item-description {
   margin: 0;
   padding-right: 1px;
+  margin-bottom: 37px;
 }
 
 .example__item-costs-title {
   @include fonts(400, 14px, 20px, $black);
   text-transform: uppercase;
   text-align: center;
+  margin-top: 16px;
+  margin-bottom: 42px;
 }
 
 .example__item-filter {
   @include fonts(400, 16px, 20px, $black);
   text-transform: uppercase;
+  text-align: center;
+  margin-top: 23px;
+  margin-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {
