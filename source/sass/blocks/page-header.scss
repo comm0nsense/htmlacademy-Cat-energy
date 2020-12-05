@@ -27,7 +27,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    background-image: linear-gradient(to right, $white 50%, $green-transparent 50%), url("../img/index-background-desktop.jpg");
+    background-image: linear-gradient(to right, $white 50%, transparent 50%), url("../img/desktop-cat.jpg");
     // background-repeat: no-repeat;
   }
 
