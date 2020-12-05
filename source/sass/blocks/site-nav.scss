@@ -1,0 +1,34 @@
+.site-nav__item {
+  @include fonts(500, 20px, 20px, $black);
+  padding-top: 22px;
+  padding-bottom: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.site-nav__item-link {
+  color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .site-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .site-nav__item {
+    @include fonts(400, 18px, 24px, $black);
+    margin-left: 35px;
+    padding-bottom: 8px;
+    padding-top: 0;
+  }
+
+  .site-nav__item--active {
+    border-bottom: 2px solid $green;
+  }
+
+  .site-nav__item:first-child {
+    margin-left: 0;
+  }
+}

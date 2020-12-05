@@ -11,7 +11,7 @@
 .example__item-description {
   margin: 0;
   padding-right: 1px;
-  margin-bottom: 37px;
+  margin-bottom: 25px;
 }
 
 .example__item-costs-title {
@@ -28,6 +28,52 @@
   text-align: center;
   margin-top: 23px;
   margin-bottom: 25px;
+}
+
+.example__details {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: flex-start;
+}
+
+.example__data {
+  margin-right: 31px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+  color: $grey;
+  width: calc(50% - 16px);
+}
+
+.example__data:last-child {
+  margin-right: 0;
+}
+
+.example__data-param {
+  @include fonts(400, 24px, 24px, $black);
+  text-transform: uppercase;
+  border: 1px solid $grey-medium;
+  border-radius: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0;
+}
+
+.example__data-desc {
+  margin: 0 24px;
+  margin-top: -10px;
+  background-color: $grey-medium-light;
+}
+
+.example__costs {
+  @include fonts(400, 14px, 20px, $black);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 42px;
 }
 
 @media (min-width: $tablet-width) {

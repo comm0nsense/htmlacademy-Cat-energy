@@ -52,43 +52,9 @@
   padding: 0;
 }
 
-.main-nav__item {
-  @include fonts(500, 20px, 20px, $black);
-  padding-top: 22px;
-  padding-bottom: 24px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.main-nav__item-link {
-  color: $black;
-}
-
 @media (min-width: $tablet-width) {
   .main-nav__toggle {
     display: none;
-  }
-
-  .main-nav__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-
-  .main-nav__item {
-    margin-left: 35px;
-  }
-
-  .main-nav__item:first-child {
-    margin-left: 0;
-  }
-
-  .main-nav__item-link {
-    @include fonts(400, 18px, 24px, $black);
-  }
-
-  .main-nav__item-link--active {
-    border-bottom: 2px solid $green;
   }
 }
 

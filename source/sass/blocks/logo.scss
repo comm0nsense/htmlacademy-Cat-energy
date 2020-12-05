@@ -1,5 +1,13 @@
-.logo {
-  display: block;
+.logo__image {
+  // display: block;
   height: 66px;
-  padding-top: 10px;
+  // padding-top: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__image {
+    // width: 174px;
+    height: 52px;
+    padding: 0;
+  }
 }

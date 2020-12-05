@@ -4,6 +4,10 @@
   flex-direction: column;
 }
 
+.page-header__logo {
+  height: 66px;
+}
+
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
     flex-direction: row;
@@ -30,7 +34,7 @@
     // width: 50%;
   }
 
-  .page-header--index__cat-wrapper {
+  .page-header__cat-wrapper {
     background: linear-gradient(to right, $white 50%, $green-transparent 50%);
   }
 }

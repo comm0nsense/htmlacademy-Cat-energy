@@ -37,6 +37,11 @@
     background-image: none;
   }
 
+  .promo__text-wrapper {
+    margin-left: 87px;
+    margin-top: 50px;
+  }
+
   .promo__title {
     @include fonts(400, 60px, 60px, $black);
     text-align: left;
