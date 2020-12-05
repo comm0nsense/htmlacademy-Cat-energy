@@ -1,3 +1,7 @@
+.page-header {
+  position: relative;
+}
+
 .page-header__wrapper {
   background-color: $white;
   display: flex;
@@ -26,17 +30,29 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header {
-    background-image: linear-gradient(to right, $white 50%, transparent 50%), url("../img/desktop-cat.jpg");
-    // background-repeat: no-repeat;
+  .page-header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 694px;
+    background-color: $green-transparent;
+  }
+
+  .page-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 694px;
+    background-image: url("../img/index-background-desktop.jpg");
+    background-repeat: no-repeat;
   }
 
   .page-header__button {
     margin-bottom: 185px;
-  }
-
-  .page-header__wrapper {
-    background: transparent;
   }
 
   .page-header__promo {
