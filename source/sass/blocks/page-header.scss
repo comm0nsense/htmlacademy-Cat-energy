@@ -8,6 +8,7 @@
   height: 66px;
 }
 
+
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
     flex-direction: row;
@@ -17,12 +18,21 @@
   .page-header__promo {
     margin-top: 63px;
   }
+
+  .page-header__button {
+    margin-bottom: 526px;
+    margin-left: 83px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
     background-image: linear-gradient(to right, $white 50%, $green-transparent 50%), url("../img/index-background-desktop.jpg");
     // background-repeat: no-repeat;
+  }
+
+  .page-header__button {
+    margin-bottom: 185px;
   }
 
   .page-header__wrapper {

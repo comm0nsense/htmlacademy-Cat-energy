@@ -9,6 +9,20 @@
 </head>
 
 <body class="page__body">
+  <style>
+    @media (min-width: 1280px) {
+      html {
+        background-image: url("img/desktop.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    }
+
+    body {
+      opacity: 0.5;
+    }
+  </style>
+
   <header class="page-header">
     <!-- <div class="page-header__cat-wrapper"> -->
       <div class="container page-header__wrapper">
@@ -42,7 +56,7 @@
         </div>
         <div class="container">
           <img class="promo__image-can" src="img/index-can-mobile.png" alt="">
-          <a class="button button--catalog" href="form.html">Подобрать программу</a>
+          <a class="page-header__button button button--catalog" href="form.html">Подобрать программу</a>
         </div>
       </section>
     <!-- </div> -->
