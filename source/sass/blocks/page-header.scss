@@ -20,22 +20,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    background-image: linear-gradient(to right, $white 50%, $green-transparent 50%), url("../img/index-background-desktop.jpg");
+    // background-repeat: no-repeat;
+  }
+
   .page-header__wrapper {
-    max-width: 1280px;
-    padding: 0 30px;
-    margin: 0 auto;
     background: transparent;
-  }
-
-  .page-header--index {
-    background-image: url("../img/index-background-desktop.jpg");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: cover;
-    // width: 50%;
-  }
-
-  .page-header__cat-wrapper {
-    background: linear-gradient(to right, $white 50%, $green-transparent 50%);
   }
 }
