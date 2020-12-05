@@ -3,10 +3,11 @@
 }
 
 .promo__background-wrapper {
-  background-image: linear-gradient(to top, rgba($green, 0.85), rgba($green, 0.85), rgba($green, 0.85)), url("../img/page-main-bg-image.jpg");
+  // background-image: linear-gradient(to top, rgba($green, 0.85), rgba($green, 0.85), rgba($green, 0.85)), url("../img/mobile-cat.jpg");
+  background-image: url("../img/mobile-cat2.jpg"), linear-gradient(to top, #64a73c, #64a73c, #64a73c);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  // background-size: cover;
 }
 
 .promo__title {
