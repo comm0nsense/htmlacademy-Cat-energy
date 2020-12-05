@@ -37,4 +37,8 @@
   .site-nav__item-link {
     @include fonts(400, 20px, 30px, $white);
   }
+
+  .site-nav__item--active {
+    border-bottom: 2px solid $white;
+  }
 }
