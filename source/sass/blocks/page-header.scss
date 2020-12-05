@@ -18,15 +18,6 @@
     flex-direction: row;
     justify-content: space-between;
   }
-
-  .page-header__promo {
-    margin-top: 63px;
-  }
-
-  .page-header__button {
-    margin-bottom: 526px;
-    margin-left: 83px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -49,13 +40,5 @@
     height: 694px;
     background-image: url("../img/index-background-desktop.jpg");
     background-repeat: no-repeat;
-  }
-
-  .page-header__button {
-    margin-bottom: 185px;
-  }
-
-  .page-header__promo {
-    margin-top: 114px;
   }
 }
