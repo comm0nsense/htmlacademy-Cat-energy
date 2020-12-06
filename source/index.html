@@ -21,45 +21,46 @@
     body {
       opacity: 1;
     }
+
   </style>
 
   <header class="page-header">
-    <!-- <div class="page-header__cat-wrapper"> -->
-      <div class="container page-header__wrapper">
-        <a class="page-header__logo logo">
-          <img class="logo__image" src="https://via.placeholder.com/191x38" width="191" height="38"
-            alt="Кэт энерджи Лого">
-        </a>
-        <nav class="main-nav main-nav--index main-nav--closed">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-nav__list site-nav">
-            <li class="site-nav__item site-nav__item--active">
-              <a class="site-nav__item-link" href="">Главная</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__item-link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__item-link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <section class="page-header__promo promo">
-        <div class="promo__background-wrapper">
-          <div class="container">
-            <div class="promo__text-wrapper">
-              <h1 class="promo__title">Функциональное<br>питание для котов</h1>
-              <p class="promo__description">Занялся собой? Займись котом!</p>
-            </div>
+    <div class="container page-header__wrapper">
+      <a class="page-header__logo logo">
+        <img class="logo__image" src="https://via.placeholder.com/191x38" width="191" height="38"
+          alt="Кэт энерджи Лого">
+      </a>
+      <nav class="main-nav main-nav--index main-nav--closed">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list site-nav">
+          <li class="site-nav__item site-nav__item--active">
+            <a class="site-nav__item-link" href="">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__item-link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__item-link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="page-header__promo promo">
+      <div class="promo__background-wrapper">
+        <div class="container">
+          <div class="promo__text-wrapper">
+            <h1 class="promo__title">Функциональное<br>питание для котов</h1>
+            <p class="promo__description">Занялся собой? Займись котом!</p>
           </div>
         </div>
-        <div class="container">
-          <img class="promo__image-can" src="img/index-can-mobile.png" alt="">
-          <a class="page-header__button button button--catalog" href="form.html">Подобрать программу</a>
-        </div>
-      </section>
-    <!-- </div> -->
+      </div>
+      <div class="container">
+        <img class="promo__image-can" src="img/index-can-mobile.png" alt="">
+        <a class="page-header__button button button--catalog" href="form.html">Подобрать программу</a>
+      </div>
+    </section>
+
   </header>
   <main class="page-main">
     <section class="plans">
@@ -165,7 +166,7 @@
           <!-- alt="Фото кота"> -->
           <div class="example__item-filter">
             <label for="before-after"><span class="visually-hidden">Вес питомца</span></label>
-            Было <input type="range" name="before-after" id="before-after" min="1" max="2" step="1"> Стало
+            Было <input class="filter" type="range" name="before-after" id="before-after" min="1" max="2" step="1"> Стало
           </div>
         </div>
       </div>

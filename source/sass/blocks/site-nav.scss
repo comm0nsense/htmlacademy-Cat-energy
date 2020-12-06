@@ -1,9 +1,10 @@
 .site-nav__item {
   @include fonts(500, 20px, 20px, $black);
-  padding-top: 22px;
+  padding-top: 21px;
   padding-bottom: 24px;
   text-align: center;
   text-transform: uppercase;
+  border-top: 1px solid $grey-light;
 }
 
 .site-nav__item-link {
@@ -22,6 +23,7 @@
     margin-left: 35px;
     padding-bottom: 8px;
     padding-top: 0;
+    border: none;
   }
 
   .site-nav__item--active {
