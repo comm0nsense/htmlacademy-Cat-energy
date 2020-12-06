@@ -3,17 +3,16 @@
 }
 
 .promo__background-wrapper {
-  // background-image: linear-gradient(to top, rgba($green, 0.85), rgba($green, 0.85), rgba($green, 0.85)), url("../img/mobile-cat.jpg");
-  background-image: url("../img/mobile-cat2.jpg"), linear-gradient(to top, #64a73c, #64a73c, #64a73c);
+  background-image: url("../img/mobile-cat2.jpg"), linear-gradient(to right, #64a73c 50%, #62a53a 50%);
   background-repeat: no-repeat;
   background-position: center;
-  // background-size: cover;
+  margin-left: -10px;
 }
 
 .promo__title {
   @include fonts(400, 36px, 36px, $white);
   text-align: center;
-  margin: 0;
+  margin: 0 0 0 10px;
   padding-top: 27px;
   margin-bottom: 25px;
 }
@@ -25,6 +24,7 @@
   padding-bottom: 164px;
   margin-top: 0;
   margin-bottom: 138px;
+  margin-left: 10px;
 }
 
 .promo__image-can {
