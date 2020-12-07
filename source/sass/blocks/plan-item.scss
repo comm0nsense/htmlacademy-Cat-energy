@@ -13,7 +13,7 @@
   padding-top: 30px;
   padding-bottom: 29px;
   padding-left: 91px;
-  padding-right: 20px;
+  // padding-right: 20px;
   margin: 0;
   position: relative;
 }
@@ -38,10 +38,9 @@
 
 .plan-item__description {
   padding-bottom: 23px;
-  margin-bottom: 18px;
-  margin-top: 0;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   border-bottom: 1px solid $grey-dark;
 }
 
@@ -49,31 +48,60 @@
   @include fonts(400, 16px, 16px, $black);
   text-transform: uppercase;
   display: block;
-  margin-left: 19px;
+  padding-top: 18px;
+  padding-left: 20px;
   padding-bottom: 22px;
 }
 
 @media (min-width: $tablet-width) {
+  .plan-item {
+    margin-bottom: 30px;
+  }
+
   .plan-item__title {
     font-size: 36px;
     line-height: 36px;
-    margin-left: 53px;
-    margin-bottom: 24px;
+    padding-top: 77px;
+    padding-left: 53px;
+    padding-bottom: 26px;
+  }
+
+  .plan-item__title--weight-lose::before {
+    position: absolute;
+    content: url("https://via.placeholder.com/200x211");
+    width: 200px;
+    height: 211px;
+    top: 83px;
+    left: 446px;
+  }
+
+  .plan-item__title--weight-gain::before {
+    position: absolute;
+    content: url("https://via.placeholder.com/268x200");
+    width: 268px;
+    height: 200px;
+    left: 412px;
+    top: 90px;
   }
 
   .plan-item__description {
     border-bottom: none;
-    margin-left: 53px;
     font-size: 16px;
     line-height: 24px;
+    padding-left: 53px;
+    padding-right: 279px;
     padding-bottom: 0;
     margin-bottom: 0;
+  }
+
+  .plan-item__description--wight-gain {
+    padding-right: 314px;
   }
 
   .plan-item__catalog {
     font-size: 20px;
     line-height: 30px;
-    margin-left: 53px;
+    padding-left: 53px;
     padding-top: 52px;
     padding-bottom: 57px;
   }

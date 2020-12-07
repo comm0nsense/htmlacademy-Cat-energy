@@ -5,6 +5,12 @@
   margin-bottom: 27px;
 }
 
+@media (min-width: $tablet-width) {
+  .plans__list {
+    margin: 0;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .plans__list {
     display: flex;

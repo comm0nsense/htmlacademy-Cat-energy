@@ -18,6 +18,11 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .page-header__button {
+    margin-bottom: 526px;
+    margin-left: 83px;
+  }
 }
 
 @media (min-width: $desktop-width) {

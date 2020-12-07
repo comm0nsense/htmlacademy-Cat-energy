@@ -35,8 +35,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .promo__text-wrapper::before {
-    background-color: transparent;
+  .promo__background-wrapper {
+    background-image: none;
   }
 
   .promo__title {
@@ -55,6 +55,7 @@
 
   .promo__image-can {
     left: 350px;
+    z-index: -1;
   }
 }
 
