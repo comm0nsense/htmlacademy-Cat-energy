@@ -5,6 +5,23 @@
   // margin: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.social__item {
+  margin-right: 36px;
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.social__link {
+  display: block;
+  padding-top: 23px;
+  padding-bottom: 13px;
 }
 
 @media (min-width: $tablet-width) {
