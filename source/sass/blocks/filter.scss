@@ -1,12 +1,8 @@
 /* stylelint-disable rule */
 .filter {
-  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  appearance: none; /* Hides the slider so that custom slider can be made */
   width: 84px; /* Specific width is required for Firefox. */
   background: transparent; /* Otherwise white in Chrome */
-}
-
-.filter::-webkit-slider-thumb {
-  -webkit-appearance: none;
 }
 
 .filter:focus {
@@ -26,7 +22,7 @@
 //Thumb
 /* Special styling for WebKit/Blink */
 .filter::-webkit-slider-thumb {
-  -webkit-appearance: none;
+  appearance: none;
   border: none;
   height: 6px;
   width: 35px;
@@ -73,7 +69,7 @@
 
 @media (min-width: $tablet-width) {
   .filter::-webkit-slider-thumb {
-    -webkit-appearance: none;
+    appearance: none;
     height: 34px;
     width: 34px;
     border-radius: 50%;
