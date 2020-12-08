@@ -59,7 +59,7 @@
 
 @media (min-width: $tablet-width) {
   .explanation__title {
-    margin-top: 45px;
+    margin-top: 43px;
   }
 
   .explanation__list {
@@ -78,9 +78,68 @@
 }
 
 @media (min-width: $tablet-width) {
+  .explanation {
+    counter-reset: number;
+  }
+
+  .explanation__item {
+    counter-increment: number;
+    padding-left: 0;
+    padding-top: 152px;
+    margin-bottom: 32px;
+  }
+
+  .explanation__item::after {
+    @include fonts(400, 280px, 280px, $grey-extra-light);
+    z-index: -1;
+    content: counter(number);
+    position: absolute;
+    top: 0;
+    left: 118px;
+  }
+
+  .explanation__title {
+    margin-bottom: 32px;
+  }
+
   .explanation__item-description {
     font-size: 16px;
     line-height: 24px;
+    color: $grey;
+    padding-right: 91px;
+    padding-bottom: 60px;
+  }
+
+  .explanation__item--ingredients::before {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    content: url("https://via.placeholder.com/80x80");
+    top: 40px;
+  }
+
+  .explanation__item--product-format::before {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    content: url("https://via.placeholder.com/80x80");
+    top: 40px;
+  }
+
+  .explanation__item--meals-number::before {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    content: url("https://via.placeholder.com/80x80");
+    top: 40px;
+  }
+
+  .explanation__item--changes::before {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    content: url("https://via.placeholder.com/80x80");
+    top: 40px;
   }
 }
 
