@@ -46,7 +46,7 @@
   background: $green;
   cursor: pointer;
 }
-/* stylelint-enable rule */
+
 
 //Track
 .filter::-webkit-slider-runnable-track {
@@ -69,4 +69,48 @@
   background: $white;
   border-radius: 6px;
   border: 1px solid $grey-medium;
+}
+
+@media (min-width: $tablet-width) {
+  .filter::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    border: 1px solid $grey-medium;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+    background-color: $white;
+    cursor: pointer;
+    // margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    // margin-top: 2px;
+  }
+
+  .filter::-moz-range-thumb {
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    border: 1px solid $grey-medium;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+    background-color: $white;
+    cursor: pointer;
+  }
+
+  //Track
+  .filter::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background-color: $grey-medium-extra;
+    border-radius: 6px;
+    border: none;
+  }
+
+  .filter::-moz-range-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background-color: $grey-medium-extra;
+    border-radius: 6px;
+    border: none;
+  }
 }
