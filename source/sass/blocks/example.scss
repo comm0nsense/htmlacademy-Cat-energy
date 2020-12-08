@@ -121,7 +121,7 @@
   .example__costs {
     font-size: 20px;
     line-height: 20px;
-    max-width: calc(25% + 0px);
+    width: calc(25% + 0px);
     text-align: right;
   }
 
@@ -137,19 +137,44 @@
 }
 
 @media (min-width: $desktop-width) {
-  .example__item {
+  .example__item-wrapper {
     display: flex;
   }
 
   .example__item-title {
     background-color: $white;
+    padding-top: 69px;
+    padding-bottom: 76px;
   }
 
   .example__item-text-wrapper {
     background-color: $grey-medium-light;
+    width: calc(50% - 40px);
+    padding-right: 134px;
   }
 
-  .example__item-table-wrapper {
-    flex-direction: column;
+  .example__item-description {
+    margin-top: 70px;
+    margin-bottom: 67px;
+  }
+
+  .example__details-wrapper {
+    display: block;
+  }
+
+  .example__costs {
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    padding-top: 55px;
+    padding-bottom: 75px;
+  }
+
+  .example__item-image-wrapper {
+    width: calc(50% - 40px);
+  }
+
+  .example__item-filter {
+    padding-top: 130px;
   }
 }
