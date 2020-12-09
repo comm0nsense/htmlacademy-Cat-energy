@@ -4,9 +4,30 @@
   padding: 0;
 }
 
+.form__fieldset--cat {
+  padding-bottom: 24px;
+  border-bottom: 1px solid $grey-dark;
+}
+
+.form__fieldset--plan {
+  // padding-top: 14px;
+  // padding-bottom: 20px;
+  // border-bottom: 1px solid $grey-dark;
+}
+
 .form__legend {
   @include fonts(400, 24px, 26px, $black);
   margin-bottom: 32px;
+}
+
+.form__item {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 13px;
+}
+
+.form__item:last-child {
+  margin-bottom: 0;
 }
 
 .form__label {
@@ -19,11 +40,10 @@
   @include fonts(400, 16px, 18px, $grey);
   text-transform: uppercase;
   height: 46px;
-  // display: block;
   padding: 10px 13px;
   border: 1px solid $grey-lighter;
-  margin-bottom: 13px;
-  width: 50%;
+  // margin-bottom: 13px;
+  flex-grow: 2;
 }
 
 .form__footnote {
@@ -48,6 +68,7 @@
 .form__list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {

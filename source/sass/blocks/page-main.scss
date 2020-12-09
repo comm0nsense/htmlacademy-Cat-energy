@@ -6,11 +6,15 @@
 
 .page-main__form-title {
   @include fonts(400, 36px, 36px, $black);
+  margin-top: 0;
+  margin-bottom: 37px;
 }
 
 .page-main__form-description {
-  @include fonts(400, 14px, 14px, $black);
+  @include fonts(400, 14px, 18px, $black);
   text-transform: uppercase;
+  margin-bottom: 39px;
+  padding-right: 54px;
 }
 
 @media (min-width: $tablet-width) {
