@@ -12,6 +12,10 @@
   height: 66px;
 }
 
+.page-header__button {
+  margin-top: 138px;
+}
+
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
@@ -20,7 +24,8 @@
   }
 
   .page-header__button {
-    margin-bottom: 526px;
+    margin-top: 52px;
+    // margin-bottom: 526px;
     margin-left: 83px;
   }
 }
@@ -33,7 +38,7 @@
   }
 
   .page-header__button {
-    margin-bottom: 185px;
+    // margin-bottom: 185px;
   }
 
   .page-header__wrapper {
