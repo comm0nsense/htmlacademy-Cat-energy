@@ -1,6 +1,4 @@
 .explanation__title {
-  // width: 280px;
-  // margin: 0 auto;
   margin-top: 27px;
   margin-bottom: 40px;
 }
@@ -57,22 +55,6 @@
   top: -2px;
 }
 
-@media (min-width: $tablet-width) {
-  .explanation__title {
-    margin-top: 43px;
-  }
-
-  .explanation__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .explanation__item {
-    width: calc(50% - 30px);
-  }
-}
-
 .explanation__item-description {
   margin: 0;
 }
@@ -82,11 +64,28 @@
     counter-reset: number;
   }
 
+  .explanation__title {
+    margin-top: 46px;
+    margin-bottom: 32px;
+  }
+
+  .explanation__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   .explanation__item {
     counter-increment: number;
+    width: calc(50% - 30px);
     padding-left: 0;
     padding-top: 152px;
-    margin-bottom: 32px;
+    padding-right: 91px;
+    margin-bottom: 33px;
+  }
+
+  .explanation__item--changes {
+    padding-right: 20px;
   }
 
   .explanation__item::after {
@@ -98,16 +97,11 @@
     left: 118px;
   }
 
-  .explanation__title {
-    margin-bottom: 32px;
-  }
-
   .explanation__item-description {
     font-size: 16px;
     line-height: 24px;
     color: $grey;
-    padding-right: 91px;
-    padding-bottom: 60px;
+    min-height: 132px;
   }
 
   .explanation__item--ingredients::before {
@@ -144,20 +138,31 @@
 }
 
 @media (min-width: $desktop-width) {
+  .explanation {
+    counter-reset: number;
+  }
+
   .explanation__title {
-    margin-top: 71px;
+    margin-top: 75px;
   }
 
   .explanation__item {
+    counter-increment: number;
     width: calc(25% - 60px);
     margin-bottom: 0;
+    padding-right: 20px;
   }
 
   .explanation__item:last-child {
     margin-bottom: 0;
   }
 
-  .explanation__item-description {
-    padding-right: 20px;
+  .explanation__item::after {
+    @include fonts(400, 280px, 280px, $grey-extra-light);
+    z-index: 1;
+    content: counter(number);
+    position: absolute;
+    top: 0;
+    left: 118px;
   }
 }
