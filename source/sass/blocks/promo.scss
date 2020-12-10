@@ -65,8 +65,13 @@
   }
 
   .promo__image-can {
-    left: 350px;
+    width: 709px;
+    height: 609px;
     z-index: -1;
+    // top: 205px;
+    // left: 220px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -77,6 +82,12 @@
 
   .promo__background-wrapper {
     background-color: transparent;
+  }
+
+  .promo__image-can {
+    z-index: 0;
+    width: 552px;
+    height: 499px;
   }
 
   .promo__title {

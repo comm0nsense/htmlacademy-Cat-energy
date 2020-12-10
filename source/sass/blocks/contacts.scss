@@ -10,7 +10,7 @@
 }
 
 .contacts__slogan {
-  @include fonts(400, 16px, 18px, $black-light);
+  @include fonts(400, 16px, 20px, $black-light);
   text-transform: uppercase;
   margin: 0;
   width: 50%;
