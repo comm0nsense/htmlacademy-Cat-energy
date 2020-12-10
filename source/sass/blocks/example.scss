@@ -87,8 +87,6 @@
 @media (min-width: $tablet-width) {
   .example {
     background: linear-gradient(to bottom, $white 57%, $grey-medium-light 43%);
-    // background: linear-gradient (to bottom, $white 26%, $grey-medium-light 26%, $grey-medium-light 74%, $grey-medium-light 100%);
-    // background: transparent;
   }
 
   .example__item-title {
@@ -137,7 +135,6 @@
 
   .example__item-filter-wrapper {
     min-height: 655px;
-    background: linear-gradient (to bottom, $white 26%, $grey-medium-light 26%, $grey-medium-light 74%, $grey-medium-light 100%);
   }
 
   .example__item-foto {
@@ -158,8 +155,7 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    background: linear-gradient (to bottom, $white 26%, $grey-medium-light 26%, $grey-medium-light 74%, $grey-medium-light 100%);
-    // background: linear-gradient(to bottom, green 25%, black 25%, black 75%, white 75%, white 80%, orange 75%, orange 100%);
+    background: linear-gradient(to bottom, $white 30%, $grey-medium-light 30%, $grey-medium-light 70%, $grey-medium-light 100%);
   }
 
   .example__item-wrapper {
@@ -167,39 +163,49 @@
   }
 
   .example__item-title {
-    background-color: transparent;
-    padding-top: 69px;
-    padding-bottom: 76px;
+    padding-top: 65px;
   }
 
   .example__item-text-wrapper {
-    // background-color: $grey-medium-light;
     width: calc(50% - 40px);
-    padding-right: 134px;
+    padding-right: 135px;
+    padding-top: 115px;
+    padding-bottom: 75px;
   }
 
   .example__item-description {
-    margin-top: 70px;
-    margin-bottom: 67px;
+    margin-top: 0;
+    // margin-bottom: 69px;
   }
 
   .example__details-wrapper {
     display: block;
+    margin-right: 73px;
+    margin-top: 69px;
   }
 
   .example__costs {
     margin: 0;
     width: 100%;
     text-align: left;
-    padding-top: 55px;
-    padding-bottom: 75px;
+    margin-top: 40px;
   }
 
   .example__item-image-wrapper {
-    width: calc(50% - 40px);
+    // width: calc(50% - 40px);
   }
 
-  .example__item-filter {
-    padding-top: 130px;
+  .example__item-filter-wrapper {
+    // padding-top: 130px;
+    min-height: auto;
+    margin-top: 0;
+    position: relative;
+  }
+
+  .example__item-foto {
+    position: absolute;
+    top: -180px;
+    width: 405px;
+    height: 536px;
   }
 }

@@ -30,23 +30,23 @@
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
-    margin: 0 40px;
-    padding-top: 66px;
-    padding-bottom: 60px;
+    margin-top: 66px;
+    margin-left: 41px;
+    margin-right: 41px;
+    margin-bottom: 58px;
+    padding: 0;
   }
 
   .contacts__slogan {
     font-size: 20px;
     line-height: 25px;
     width: calc(50% - 30px);
-    padding-right: 130px;
   }
 
   .contacts__address {
     font-size: 16px;
     line-height: 20px;
     width: calc(50% - 30px);
-    padding-left: 123px;
     text-align: right;
   }
 
@@ -62,14 +62,19 @@
     background-color: $white;
     margin: 0;
     width: calc(50% - 80px);
-    justify-content: space-evenly;
+    // justify-content: space-evenly;
+    padding-top: 66px;
+    padding-left: 76px;
+    padding-bottom: 51px;
+    padding-right: 89px;
   }
 
   .contacts__slogan {
-    width: calc(50% - 80px);
+    // width: calc(50% - 80px);
   }
 
   .contacts__address {
-    width: calc(50% - 80px);
+    // width: calc(50% - 80px);
+    text-align: left;
   }
 }
