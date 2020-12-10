@@ -12,6 +12,8 @@
 
 .social__item {
   margin-right: 36px;
+  padding-top: 23px;
+  padding-bottom: 13px;
 }
 
 .social__item:last-child {
@@ -20,12 +22,14 @@
 
 .social__link {
   display: block;
-  padding-top: 23px;
-  padding-bottom: 13px;
 }
 
 @media (min-width: $tablet-width) {
   .social__list {
     border: none;
+  }
+
+  .social__item {
+    padding: 0;
   }
 }

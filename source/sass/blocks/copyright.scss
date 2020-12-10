@@ -8,8 +8,16 @@
 
 .copyright__text {
   font-size: 16px;
-  line-height: 18.4px;
+  line-height: 18px;
   color: $grey;
-  // padding-top: 28px;
-  // padding-bottom: 32px;
+}
+
+.copyright__logo {
+  margin-left: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    min-height: auto;
+  }
 }
