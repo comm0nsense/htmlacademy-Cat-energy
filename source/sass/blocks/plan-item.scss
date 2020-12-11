@@ -48,6 +48,36 @@
   text-transform: uppercase;
   display: block;
   margin-top: 18px;
+  position: relative;
+}
+
+.plan-item__catalog::after {
+  position: absolute;
+  content: url("../img/icon-arrow.svg");
+  width: 32px;
+  height: 10px;
+  left: 100px;
+}
+
+.plan-item__catalog:hover::after {
+  position: absolute;
+  content: url("../img/icon-arrow-hover.svg");
+  width: 32px;
+  height: 10px;
+  left: 100px;
+}
+
+.plan-item__catalog:active {
+  opacity: 0.3;
+}
+
+.plan-item__catalog:active::after {
+  position: absolute;
+  content: url("../img/icon-arrow-hover.svg");
+  width: 32px;
+  height: 10px;
+  left: 100px;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

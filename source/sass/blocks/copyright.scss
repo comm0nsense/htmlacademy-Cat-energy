@@ -12,8 +12,21 @@
   color: $grey;
 }
 
+.copyright__text:active {
+  opacity: 0.3;
+}
+
 .copyright__logo {
   margin-left: 23px;
+}
+
+.copyright__logo:hover path {
+  fill: $green;
+}
+
+.copyright__logo:active path {
+  fill: $green;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

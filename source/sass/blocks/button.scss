@@ -7,6 +7,14 @@
   display: block;
 }
 
+.button:hover {
+  background-color: $green-brighter;
+}
+
+.button:active {
+  color: $white-opacity;
+}
+
 .button--catalog {
   @include fonts(400, 14px, 18px, $white);
   padding-top: 11px;
