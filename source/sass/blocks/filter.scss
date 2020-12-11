@@ -44,7 +44,6 @@
   cursor: pointer;
 }
 
-
 //Track
 .filter::-webkit-slider-runnable-track {
   width: 84px;
@@ -92,8 +91,26 @@
     border-radius: 50%;
     border: 1px solid $grey-medium;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
-    background-color: $white;
+    background: radial-gradient($green, $green 4px, $white 5px);
     cursor: pointer;
+  }
+
+  .filter::-webkit-slider-thumb:hover {
+    box-shadow: (0 2px 4px rgba(0, 0, 0, 0.19));
+  }
+
+  .filter::-moz-range-thumb:hover {
+    box-shadow: (0 2px 4px rgba(0, 0, 0, 0.19));
+  }
+
+  .filter::-webkit-slider-thumb:active {
+    box-shadow: (0 3px 5px rgba(0, 0, 0, 0.2));
+    border: 1px solid $green;
+  }
+
+  .filter::-moz-range-thumb:active {
+    box-shadow: (0 3px 5px rgba(0, 0, 0, 0.2));
+    border: 1px solid $green;
   }
 
   //Track
@@ -114,8 +131,4 @@
     border-radius: 6px;
     border: none;
   }
-}
-
-@media (min-width: $desktop-width) {
-  //
 }
