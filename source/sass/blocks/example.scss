@@ -81,7 +81,11 @@
 }
 
 .example__item-filter-before {
-  margin-right: 20px;
+  margin-right: 10px;
+}
+
+.example__item-filter-after {
+  margin-right: 10px;
 }
 
 @media (min-width: $tablet-width) {
@@ -146,10 +150,14 @@
   .example__item-filter {
     font-size: 20px;
     line-height: 30px;
-    padding: 0;
+    padding: 4px;
     z-index: -1;
     background-color: $grey-medium-light;
     margin: 0;
+  }
+
+  .example__item-filter-before {
+    margin-right: 22px;
   }
 }
 
