@@ -1,8 +1,12 @@
 
-.radio {
+.radio__item {
   padding-left: 45px;
   position: relative;
   margin-bottom: 23px;
+}
+
+.radio__item:last-child {
+  margin-bottom: 0;
 }
 
 .radio__label {
@@ -33,7 +37,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .radio {
+  .radio__item {
     padding-left: 87px;
   }
 
@@ -58,9 +62,9 @@
     position: absolute;
     width: 18px;
     height: 18px;
-    background-color: $green;
+    background-color: $green;//можно ли сделать через radial-gradient? как?
     border-radius: 50%;
-    left: 37px;
-    top: 6px;
+    left: 36px;
+    top: 5px;
   }
 }
