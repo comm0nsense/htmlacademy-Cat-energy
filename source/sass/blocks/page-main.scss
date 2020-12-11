@@ -18,8 +18,18 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-main__form-title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+    padding-left: 39px;
+  }
+
   .page-main__form-description {
     padding-left: 42px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
   }
 }
 

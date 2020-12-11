@@ -5,14 +5,15 @@
 }
 
 .form__fieldset--cat {
-  padding-bottom: 24px;
-  border-bottom: 1px solid $grey-dark;
+  margin-bottom: 24px;
+  // border-bottom: 1px solid $grey-dark;
 }
 
 .form__fieldset--plan {
-  // padding-top: 14px;
-  // padding-bottom: 20px;
-  // border-bottom: 1px solid $grey-dark;
+  padding-top: 28px;
+  // padding-bottom: 25px;
+  border-top: 1px solid $grey-dark;
+  border-bottom: 1px solid $grey-dark;
 }
 
 .form__legend {
@@ -77,8 +78,32 @@
     padding-right: 36px;
   }
 
+  .form__fieldset--cat {
+    margin-bottom: 72px;
+  }
+
   .form__fieldset--plan {
     border: 1px solid $grey-lighter;
+  }
+
+  .form__item {
+    margin-bottom: 20px;
+  }
+
+  .form__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__input {
+    font-size: 20px;
+    line-height: 30px;
+    height: 52px;
+  }
+
+  .form__input::placeholder {
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .form__list--checkbox {

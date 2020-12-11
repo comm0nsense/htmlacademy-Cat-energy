@@ -31,3 +31,36 @@
   left: 9px;
   top: 2px;
 }
+
+@media (min-width: $tablet-width) {
+  .radio {
+    padding-left: 87px;
+  }
+
+  .radio__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .radio__label::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px solid $grey-medium;
+    border-radius: 50%;
+    top: -6px;
+    left: 25px;
+  }
+
+  .radio__input:checked + .radio__label::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: $green;
+    border-radius: 50%;
+    left: 37px;
+    top: 6px;
+  }
+}
