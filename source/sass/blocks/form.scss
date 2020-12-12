@@ -101,6 +101,7 @@
     font-size: 20px;
     line-height: 30px;
     height: 52px;
+    padding-left: 18px;
   }
 
   .form__input::placeholder {
@@ -133,6 +134,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .form__fieldset--cat {
+    margin-bottom: 0;
   }
 
   .form__item-wrapper {
