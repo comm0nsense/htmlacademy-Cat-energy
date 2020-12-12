@@ -46,7 +46,6 @@
 .plan-item__catalog {
   @include fonts(400, 16px, 16px, $black);
   text-transform: uppercase;
-  display: block;
   margin-top: 18px;
   position: relative;
 }

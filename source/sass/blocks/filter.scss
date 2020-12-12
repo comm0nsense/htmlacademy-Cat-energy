@@ -55,10 +55,6 @@
   border: 1px solid $grey-medium;
 }
 
-.filter:focus::-webkit-slider-runnable-track {
-  background: $white;
-}
-
 .filter::-moz-range-track {
   width: 84px;
   height: 14px;
@@ -121,6 +117,7 @@
     background-color: $grey-medium-extra;
     border-radius: 6px;
     border: none;
+    padding: 0;
   }
 
   .filter::-moz-range-track {
