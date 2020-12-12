@@ -131,6 +131,15 @@
     line-height: 30px;
     margin: 0;
   }
+
+  .plan-item__catalog::after {
+    left: 132px;
+    top: -5px;
+  }
+
+  .plan-item__catalog:hover::after {
+    left: 132px;
+  }
 }
 
 @media (min-width: $desktop-width) {

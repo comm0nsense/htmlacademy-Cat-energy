@@ -31,8 +31,11 @@
   }
 
   .site-nav__item:active {
+    opacity: 0.3;
+  }
+
+  .site-nav__item--active {
     border-bottom: 2px solid $green;
-    opacity: 1;
   }
 
   .site-nav__item:first-child {
