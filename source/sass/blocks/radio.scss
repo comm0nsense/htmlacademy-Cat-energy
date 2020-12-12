@@ -30,9 +30,12 @@
   position: absolute;
   width: 14px;
   height: 14px;
-  background-color: $green;
+  // background-color: $green;
+  // width: 30px;
+  // height: 30px;
+  background: radial-gradient($green, $green 14px, $white 30px);
   border-radius: 50%;
-  left: 9px;
+  left: 8px;
   top: 2px;
 }
 

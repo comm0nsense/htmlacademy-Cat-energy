@@ -12,14 +12,54 @@
 .form__fieldset--plan {
   padding-top: 28px;
   // padding-bottom: 25px;
-  border-top: 1px solid $grey-dark;
-  border-bottom: 1px solid $grey-dark;
+  // border-top: 1px solid $grey-dark;
+  // border-bottom: 1px solid $grey-dark;
   padding-bottom: 22px;
+  position: relative;
+}
+
+.form__fieldset--plan::before {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 1px;
+  background-color: $grey-dark;
+  margin-left: calc(-50vw + 50%);
+  top: 0;
+}
+
+.form__fieldset--plan::after {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 1px;
+  background-color: $grey-dark;
+  margin-left: calc(-50vw + 50%);
+  top: 157px;
 }
 
 .form__legend {
   @include fonts(400, 24px, 26px, $black);
+  padding-top: 28px;
   margin-bottom: 32px;
+  position: relative;
+}
+
+.form__legend::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100vw;
+  background-color: $green;
+}
+
+.form__legend--owner::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100vw;
+  background-color: $green;
+  // left: calc(50vw + 60px);
 }
 
 .form__item {
@@ -86,6 +126,11 @@
   .form__fieldset--plan {
     border: 1px solid $grey-lighter;
     padding-bottom: 29px;
+  }
+
+  .form__fieldset--plan::before,
+  .form__fieldset--plan::after {
+    display: none;
   }
 
   .form__item {
