@@ -1,29 +1,29 @@
-.checkbox {
+.checkbox__item {
   margin-bottom: 24px;
-  padding-left: 65px;
+  padding-left: 46px;
   position: relative;
 }
 
-.checkbox__label {
+.checkbox__item-label {
   @include fonts(400, 16px, 18px, $black-lighter);
   text-transform: uppercase;
 }
 
-.checkbox__label::before {
+.checkbox__item-label::before {
   content: "";
   position: absolute;
   width: 30px;
   height: 30px;
   border: 1px solid $grey-medium;
   top: -5px;
-  left: 10px;
+  left: 0;
 }
 
-.checkbox__input:checked + .checkbox__label::after {
+.checkbox__item-input:checked + .checkbox__item-label::after {
   content: url("../../img/checkbox-tick.svg");
   position: absolute;
   width: 18px;
   height: 14px;
-  left: 15px;
+  left: 5px;
   top: 2px;
 }
