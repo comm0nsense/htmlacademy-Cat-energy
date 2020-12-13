@@ -3,10 +3,14 @@
 $black: #000000;
 $black-light: #111111;
 $black-lighter: #222222;
+$black-transparent: rgba(0, 0, 0, 0.24);
+$black-more-transparent: rgba(0, 0, 0, 0.4);
 $white: #ffffff;
+$white-opacity: rgba(255, 255, 255, 0.3);
 $grey: #444444;
 $grey-rgba: rgba(68, 68, 68, 1);
 $grey-medium: #cdcdcd;
+$grey-medium-extra: #dcdcdc;
 $grey-light: #e6e6e6;
 $grey-lighter: #e7e7e7;
 $grey-extra-light: #f2f2f2;
@@ -16,6 +20,7 @@ $grey-dark: #d9d9d9;
 $grey-dark-light: #d3d3d3;
 $green: #68b738;
 $green-transparent: rgba(104, 183, 56, 0.85);
+$green-brighter: #5eaa2f;
 
 //Viewports
 

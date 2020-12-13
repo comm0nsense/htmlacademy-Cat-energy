@@ -7,9 +7,18 @@
   display: block;
 }
 
+.button:hover {
+  background-color: $green-brighter;
+}
+
+.button:active {
+  color: $white-opacity;
+}
+
 .button--catalog {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  @include fonts(400, 14px, 18px, $white);
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
 
 @media (min-width: $tablet-width) {
@@ -17,7 +26,6 @@
     @include fonts(400, 20px, 26px, $white);
     padding: 14px 26px;
     display: inline-block;
-    margin-bottom: 526px;
   }
 }
 
