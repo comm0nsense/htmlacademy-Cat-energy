@@ -31,6 +31,15 @@
     line-height: 30px;
     margin-bottom: 66px;
   }
+
+  .page-main__promo {
+    margin-top: 63px;
+  }
+
+  .page-main__button {
+    margin-bottom: 526px;
+    margin-left: 83px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -40,5 +49,13 @@
 
   .page-main__form-description {
     padding: 0;
+  }
+
+  .page-main__button {
+    margin-bottom: 185px;
+  }
+
+  .page-main__promo {
+    margin-top: 114px;
   }
 }
