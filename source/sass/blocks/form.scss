@@ -6,15 +6,12 @@
 
 .form__fieldset--cat {
   margin-bottom: 24px;
-  // border-bottom: 1px solid $grey-dark;
 }
 
 .form__fieldset--plan {
   padding-top: 28px;
-  // padding-bottom: 25px;
-  // border-top: 1px solid $grey-dark;
-  // border-bottom: 1px solid $grey-dark;
   padding-bottom: 22px;
+  margin-top: 0;
   position: relative;
 }
 
@@ -40,7 +37,7 @@
 
 .form__legend {
   @include fonts(400, 24px, 26px, $black);
-  padding-top: 28px;
+  padding-top: 27px;
   margin-bottom: 32px;
   position: relative;
 }
@@ -54,12 +51,13 @@
 }
 
 .form__legend--owner::after {
-  position: absolute;
-  content: "";
-  height: 2px;
-  width: 100vw;
-  background-color: $green;
-  // left: calc(50vw + 60px);
+  left: calc(100% - 80px);
+  top: 42px;
+}
+
+.form__legend--comments::after {
+  left: calc(100% + 18px);
+  top: 40px;
 }
 
 .form__item {
@@ -133,6 +131,45 @@
     display: none;
   }
 
+  .form__legend {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 76px;
+    margin-bottom: 75px;
+  }
+
+  .form__legend--comments {
+    padding-top: 66px;
+  }
+
+  .form__legend::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100vw;
+    background-color: $green;
+  }
+
+  .form__legend--owner::before {
+    right: calc(100% + 42px);
+    top: 98px;
+  }
+
+  .form__legend--comments::before {
+    right: calc(100% + 42px);
+    top: 88px;
+  }
+
+  .form__legend--owner::after {
+    left: calc(100% + 35px);
+    top: 98px;
+  }
+
+  .form__legend--comments::after {
+    left: calc(100% + 34px);
+    top: 88px;
+  }
+
   .form__item {
     margin-bottom: 20px;
   }
@@ -186,6 +223,15 @@
     width: calc(50% - 40px);
   }
 
+  .form__legend--owner {
+    padding-top: 70px;
+  }
+
+  .form__legend--owner::before,
+  .form__legend--owner::after {
+    top: 93px;
+  }
+
   .form__item-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -194,6 +240,7 @@
 
   .form__item--contact {
     width: calc(50% - 40px);
+    margin-bottom: 0;
   }
 
   .checkbox {

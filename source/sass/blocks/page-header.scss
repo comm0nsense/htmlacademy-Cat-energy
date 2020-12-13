@@ -37,10 +37,6 @@
     background-position: right;
   }
 
-  .page-header__button {
-    // margin-bottom: 185px;
-  }
-
   .page-header__wrapper {
     background: transparent;
   }
@@ -54,5 +50,10 @@
     height: 694px;
     background-image: url("../img/index-background-desktop.jpg");
     background-repeat: no-repeat;
+  }
+
+  .page-header--form::before {
+    // background-image: none;
+    // display: none;
   }
 }
