@@ -1,7 +1,7 @@
 .social__list {
   list-style: none;
-  border-bottom: 1px solid $grey-dark;
-  border-top: 1px solid $grey-dark;
+  // border-bottom: 1px solid $grey-dark;
+  // border-top: 1px solid $grey-dark;
   // margin: 0;
   display: flex;
   flex-wrap: wrap;
@@ -12,8 +12,6 @@
 
 .social__item {
   margin-right: 36px;
-  padding-top: 23px;
-  padding-bottom: 13px;
 }
 
 .social__item:last-child {
