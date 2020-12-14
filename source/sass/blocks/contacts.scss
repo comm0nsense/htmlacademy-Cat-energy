@@ -13,6 +13,10 @@
   margin-bottom: 27px;
 }
 
+.contacts__wrapper--form {
+  padding-top: 28px;
+}
+
 .contacts__slogan {
   @include fonts(400, 16px, 20px, $black-light);
   text-transform: uppercase;
