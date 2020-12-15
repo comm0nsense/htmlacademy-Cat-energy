@@ -54,3 +54,14 @@
     height: 40px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .checkbox {
+    justify-content: space-between;
+  }
+
+  .checkbox__item {
+    width: calc(25% - 60px);
+  }
+}
+

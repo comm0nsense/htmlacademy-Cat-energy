@@ -278,11 +278,20 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 70px;
   }
 
   .form__fieldset--cat {
     margin-bottom: 0;
     width: calc(50% - 40px);
+  }
+
+  .form__fieldset--comments {
+    margin-bottom: 68px;
+  }
+
+  .form__fieldset--extra {
+    margin-bottom: 23px;
   }
 
   .form__legend--owner::before,
@@ -296,18 +305,22 @@
     justify-content: space-between;
   }
 
+  .form__item-wrapper--contacts {
+    margin-bottom: 68px;
+  }
+
   .form__item--contact {
     width: calc(50% - 40px);
     margin-bottom: 0;
   }
 
-  .checkbox {
-    width: calc(25% - 60px);
-  }
-
   .form__fieldset--plan {
     width: calc(50% - 40px);
-    margin-bottom: 72px;
+    margin-bottom: 0;
+  }
+
+  .form__button-wrapper {
+    margin-bottom: 85px;
   }
 }
 
