@@ -1,6 +1,5 @@
 .contacts {
   background-color: $white;
-
 }
 
 .contacts--form {
@@ -41,6 +40,12 @@
     padding-left: 41px;
     padding-right: 41px;
     margin-bottom: 60px;
+  }
+
+  .contacts__wrapper--form {
+    padding-top: 65px;
+    margin-bottom: 0;
+    padding-bottom: 65px;
   }
 
   .contacts__slogan {
