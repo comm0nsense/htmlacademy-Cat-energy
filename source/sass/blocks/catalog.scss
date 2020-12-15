@@ -4,6 +4,14 @@
   margin: 0;
 }
 
+.catalog__item {
+  margin-bottom: 22px;
+}
+
+.catalog__item:last-child {
+  margin-bottom: 0;
+}
+
 @media (min-width: $tablet-width) {
   .catalog__list {
     display: flex;
