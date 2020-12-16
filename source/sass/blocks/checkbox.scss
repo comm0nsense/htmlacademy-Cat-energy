@@ -16,7 +16,7 @@
   height: 30px;
   border: 1px solid $grey-medium;
   top: -5px;
-  left: 0;
+  left: -2px;
 }
 
 .checkbox__item-input:checked + .checkbox__item-label::after {
@@ -24,14 +24,12 @@
   position: absolute;
   width: 18px;
   height: 14px;
-  left: 5px;
-  top: 2px;
+  left: 9px;
+  top: -2px;
 }
 
 @media (min-width: $tablet-width) {
   .checkbox {
-    // width: calc(50% - 30px);
-    // width: 342px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -39,9 +37,13 @@
 
   .checkbox__item {
     padding-left: 57px;
-    // width: calc(50% - 30px);
+    // width: calc(50% - 5px);
     width: 50%;
     margin-bottom: 43px;
+  }
+
+  .checkbox__item:nth-child(2n) {
+    padding-left: 86px;
   }
 
   .checkbox__item-label {
