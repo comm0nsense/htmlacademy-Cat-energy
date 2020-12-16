@@ -12,6 +12,7 @@
 .radio__label {
   @include fonts(400, 16px, 18px, $black-lighter);
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .radio__label::before {
@@ -39,6 +40,15 @@
   top: 2px;
 }
 
+.radio__input:hover + .radio__label::before {
+  border: 1px solid $grey-extra-lighter;
+}
+
+.radio__input:disabled + .radio__label::before,
+.radio__input:disabled + .radio__label::after {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .radio__item {
     padding-left: 87px;
@@ -56,8 +66,8 @@
     height: 40px;
     border: 1px solid $grey-medium;
     border-radius: 50%;
-    top: -6px;
-    left: 25px;
+    top: -5px;
+    left: 28px;
   }
 
   .radio__input:checked + .radio__label::after {
@@ -67,7 +77,7 @@
     height: 18px;
     background-color: $green;//можно ли сделать через radial-gradient? как?
     border-radius: 50%;
-    left: 36px;
-    top: 5px;
+    left: 38px;
+    top: 7px;
   }
 }
