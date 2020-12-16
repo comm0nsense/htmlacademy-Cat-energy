@@ -87,14 +87,14 @@
   position: relative;
 }
 
-.form__input--email-icon {
+.form__input-email-icon {
   position: absolute;
   right: 15px;
   top: 16px;
 }
 
-.form__input--email:disabled + .form__input--email-icon path {
-  fill: $green;
+.form__input--email:disabled + .form__input-email-icon {
+  stroke: $green;
 }
 
 .form__input--tel-icon {
@@ -271,7 +271,7 @@
     line-height: 30px;
   }
 
-  .form__input--email-icon {
+  .form__input-email-icon {
     right: 14px;
     top: 20px;
   }
@@ -350,7 +350,7 @@
     margin-bottom: 0;
   }
 
-  .form__input--email-icon {
+  .form__input-email-icon {
     left: 531px;
     top: 19px;
   }
