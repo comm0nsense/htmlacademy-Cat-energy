@@ -87,6 +87,14 @@
   position: relative;
 }
 
+.form__input:focus {
+  border: 1px solid $grey;
+}
+
+.form__input:invalid {
+  border: 1px solid $red;
+}
+
 .form__input-email-icon {
   position: absolute;
   right: 15px;
@@ -97,12 +105,19 @@
   stroke: $green;
 }
 
-.form__input--tel-icon {
+.form__input-tel-icon {
   position: absolute;
   right: 15px;
   top: 72px;
 }
 
+.form__input--tel:disabled + .form__input-tel-icon path {
+  fill: $green;
+}
+
+// .form__input--tel:invalid + .form__input-tel-icon path {
+//   fill: $red;
+// }
 
 .form__item {
   display: flex;
@@ -276,7 +291,7 @@
     top: 20px;
   }
 
-  .form__input--tel-icon {
+  .form__input-tel-icon {
     top: 89px;
     right: 14px;
   }
@@ -355,7 +370,7 @@
     top: 19px;
   }
 
-  .form__input--tel-icon {
+  .form__input-tel-icon {
     top: 15px;
     right: 16px;
   }
