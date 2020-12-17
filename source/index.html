@@ -35,12 +35,12 @@
     }
 
     body {
-      opacity: 0.5;
+      opacity: 1;
     }
 
   </style>
 
-  <header class="page-header">
+  <header class="page-header page-header--index">
     <div class="container page-header__wrapper">
       <a class="page-header__logo logo">
         <img class="logo__image" src="https://via.placeholder.com/191x38" width="191" height="38"
@@ -49,7 +49,7 @@
       <nav class="main-nav main-nav--index main-nav--closed">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-nav">
-          <li class="site-nav__item site-nav__item--active">
+          <li class="site-nav__item site-nav__item--index site-nav__item--active">
             <a class="site-nav__item-link" href="">Главная</a>
           </li>
           <li class="site-nav__item">
@@ -72,8 +72,10 @@
         </div>
       </div>
       <div class="container">
-        <img class="promo__image-can" src="img/index-can-mobile.png" alt="">
-        <a class="page-header__button button button--catalog" href="form.html">Подобрать программу</a>
+        <div class="page-header__button-wrapper">
+          <img class="promo__image-can" src="img/index-can-mobile.png" alt="">
+          <a class="button button--catalog" href="form.html">Подобрать программу</a>
+        </div>
       </div>
     </section>
 

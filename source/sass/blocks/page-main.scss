@@ -1,3 +1,6 @@
+.page-main {
+  overflow-x: hidden;
+}
 
 .page-main__title--catalog {
   @include fonts(400, 36px, 36px, $black);
@@ -6,16 +9,32 @@
 
 .page-main__form-title {
   @include fonts(400, 36px, 36px, $black);
+  margin-top: 27px;
+  margin-bottom: 37px;
 }
 
 .page-main__form-description {
-  @include fonts(400, 14px, 14px, $black);
+  @include fonts(400, 14px, 18px, $black);
   text-transform: uppercase;
+  margin-bottom: 38px;
+  // padding-right: 54px;
 }
 
 @media (min-width: $tablet-width) {
+  .page-main__form-title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+    margin-top: 0;
+    padding-left: 39px;
+  }
+
   .page-main__form-description {
     padding-left: 42px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+    margin-top: 0;
   }
 
   .page-main__promo {
@@ -29,6 +48,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-main__form-title {
+    padding-left: 0;
+    margin-top: 12px;
+    margin-bottom: 56px;
+  }
+
   .page-main__form-description {
     padding: 0;
   }

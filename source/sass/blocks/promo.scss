@@ -11,6 +11,7 @@
 
 .promo__text-wrapper {
   min-height: 302px;
+  margin-bottom: 138px;
 }
 
 .promo__title {
@@ -49,13 +50,14 @@
 
   .promo__text-wrapper {
     min-height: auto;
+    margin-bottom: 49px;
   }
 
   .promo__title {
     @include fonts(400, 60px, 60px, $black);
     text-align: left;
     padding: 0 0 0 87px;
-    margin-bottom: 41px;
+    margin-bottom: 40px;
   }
 
   .promo__description {
@@ -67,7 +69,7 @@
   .promo__image-can {
     width: 709px;
     height: 609px;
-    z-index: -1;
+    // z-index: -1;
     left: 50%;
     transform: translateX(-45%);
     top: 200px;
@@ -76,11 +78,15 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    min-height: 519px;
+    min-height: 470px;
   }
 
   .promo__background-wrapper {
     background-color: transparent;
+  }
+
+  .promo__text-wrapper {
+    margin-bottom: 51px;
   }
 
   .promo__image-can {
@@ -93,7 +99,6 @@
 
   .promo__title {
     padding-left: 80px;
-    padding-top: 50px;
   }
 
   .promo__description {

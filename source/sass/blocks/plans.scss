@@ -1,20 +1,32 @@
+.plans {
+  margin-top: 22px;
+  margin-bottom: 26px;
+}
+
 .plans__list {
   list-style: none;
   padding: 0;
-  margin-top: 22px;
-  margin-bottom: 28px;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
+  .plans {
+    margin-top: 0;
+    margin-bottom: 46px;
+  }
+
   .plans__list {
     margin: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .plans {
+    margin-bottom: 74px;
+  }
+
   .plans__list {
     display: flex;
     justify-content: space-between;
-    margin-top: 86px;
   }
 }

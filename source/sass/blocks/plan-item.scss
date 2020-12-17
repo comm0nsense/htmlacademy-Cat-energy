@@ -4,7 +4,7 @@
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 22px;
+  padding-bottom: 19px;
 }
 
 .plan-item:last-child {
@@ -39,14 +39,16 @@
 }
 
 .plan-item__description {
-  margin: 0;
-  padding-bottom: 23px;
+  margin-top: 0;
+  padding-bottom: 22px;
+  margin-bottom: 19px;
+  border-bottom: 1px solid $grey-dark;
 }
 
 .plan-item__catalog {
   @include fonts(400, 16px, 16px, $black);
   text-transform: uppercase;
-  margin-top: 18px;
+  padding-top: 18px;
   position: relative;
 }
 
@@ -81,10 +83,10 @@
 
 @media (min-width: $tablet-width) {
   .plan-item {
-    margin-bottom: 30px;
-    padding-top: 77px;
+    margin-bottom: 32px;
+    padding-top: 75px;
     padding-left: 53px;
-    padding-bottom: 55px;
+    padding-bottom: 57px;
     padding-right: 279px;
   }
 
@@ -118,7 +120,7 @@
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 0;
-    margin-bottom: 52px;
+    margin-bottom: 50px;
   }
 
   .plan-item__description--wight-gain {
@@ -129,11 +131,12 @@
     font-size: 20px;
     line-height: 30px;
     margin: 0;
+    padding-top: 0;
   }
 
   .plan-item__catalog::after {
     left: 132px;
-    top: -5px;
+    top: -2px;
   }
 
   .plan-item__catalog:hover::after {

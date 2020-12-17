@@ -9,43 +9,34 @@
 }
 
 .page-header__logo {
-  height: 66px;
+  min-height: 66px;
 }
-
-.page-header__button {
-  margin-top: 138px;
-}
-
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 65px;
   }
 
-  .page-header__button {
-    margin-top: 52px;
-    // margin-bottom: 526px;
-    margin-left: 83px;
+  .page-header__wrapper--form {
+    margin-bottom: 67px;
+  }
+
+  .page-header__button-wrapper {
+    padding-left: 83px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-header {
+  .page-header--index {
     background-image: linear-gradient(to right, $white 50%, transparent 50%), url("../img/desktop-cat.jpg"), linear-gradient(to right, $white 50%, #64a73d 50%);
     background-repeat: no-repeat;
     background-position: right;
+    margin-bottom: 85px;
   }
 
-  .page-header__button {
-    // margin-bottom: 185px;
-  }
-
-  .page-header__wrapper {
-    background: transparent;
-  }
-
-  .page-header::before {
+  .page-header--index::before {
     content: "";
     position: absolute;
     top: 0;
@@ -54,5 +45,19 @@
     height: 694px;
     background-image: url("../img/index-background-desktop.jpg");
     background-repeat: no-repeat;
+  }
+
+  .page-header__wrapper {
+    background: transparent;
+    margin-bottom: 115px;
+  }
+
+  .page-header__wrapper--form {
+    margin-bottom: 67px;
+  }
+
+  .page-header__button-wrapper {
+    margin: 0;
+    padding-left: 80px;
   }
 }

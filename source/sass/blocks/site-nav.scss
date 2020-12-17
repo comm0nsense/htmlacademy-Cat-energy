@@ -41,6 +41,10 @@
   .site-nav__item:first-child {
     margin-left: 0;
   }
+
+  .site-nav__item-link--form {
+    padding-bottom: 5px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -48,7 +52,12 @@
     @include fonts(400, 20px, 30px, $white);
   }
 
-  .site-nav__item:active {
+  .site-nav__item-link--form {
+    color: $black;
+    padding-bottom: 6px;
+  }
+
+  .site-nav__item--index {
     border-bottom: 2px solid $white;
   }
 }
