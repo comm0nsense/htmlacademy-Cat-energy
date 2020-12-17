@@ -87,12 +87,8 @@
   position: relative;
 }
 
-.form__input:focus {
-  border: 1px solid $grey;
-}
-
 .form__input:invalid {
-  border: 1px solid $red;
+  border: 2px solid $red;
 }
 
 .form__input-email-icon {
@@ -144,6 +140,12 @@
   // margin-bottom: 13px;
   flex-grow: 2;
   position: relative;
+  appearance: none;
+  outline: none;
+}
+
+.form__input:focus {
+  border: 2px solid $grey;
 }
 
 .form__button-wrapper {

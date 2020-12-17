@@ -24,6 +24,11 @@
   border: 1px solid $grey-extra-lighter;
 }
 
+.checkbox__item-input:disabled + .checkbox__item-label::before {
+  border: 1px solid $grey-extra-lighter;
+}
+
+.checkbox__item-input:disabled + .checkbox__item-label,
 .checkbox__item-input:disabled + .checkbox__item-label::before,
 .checkbox__item-input:disabled + .checkbox__item-label::after {
   opacity: 0.3;
