@@ -16,12 +16,20 @@
 }
 
 @media (min-width: $tablet-width) {
-  .extras__item {
-    border-top: 1px solid $grey-medium;
+  .extras__list {
+    padding-left: 38px;
+    padding-right: 38px;
   }
 
   .extras__title {
-    margin-left: 38px;
+    padding-left: 38px;
+    padding-right: 38px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .extras__item {
+    border-top: 1px solid $grey-medium;
   }
 
   .extras__button {
