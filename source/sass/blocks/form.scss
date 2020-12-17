@@ -87,7 +87,7 @@
   position: relative;
 }
 
-.form__input:invalid {
+.form__input:invalid:not(:placeholder-shown) {
   border: 2px solid $red;
 }
 
@@ -146,6 +146,7 @@
 
 .form__input:focus {
   border: 2px solid $grey;
+  padding-left: 17px;
 }
 
 .form__button-wrapper {
