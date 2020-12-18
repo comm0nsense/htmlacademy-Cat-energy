@@ -57,6 +57,19 @@
     padding-left: 39px;
   }
 
+  .page-main__title--catalog {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 83px;
+  }
+
+  .page-main__title--catalog::before,
+  .page-main__title--catalog::after {
+    display: none;
+  }
+
   .page-main__form-description {
     padding-left: 42px;
     font-size: 20px;

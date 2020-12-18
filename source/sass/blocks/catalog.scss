@@ -26,6 +26,7 @@
   .catalog__item {
     @include col-2(60px);
     margin-right: 60px;
+    margin-bottom: 59px;
   }
 
   .catalog__item:nth-child(2n) {
