@@ -1,19 +1,20 @@
 .contacts {
-  background-color: $white;
+  background-color: $grey-extra-light;
 }
 
-.contacts--form {
-  background-color: $grey-extra-light;
+.contacts--index {
+  background-color: $white;
 }
 
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
+  padding-top: 28px;
   margin-bottom: 27px;
 }
 
-.contacts__wrapper--form {
-  padding-top: 28px;
+.contacts__wrapper--index {
+  padding: 0;
 }
 
 .contacts__slogan {
@@ -37,15 +38,19 @@
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
-    padding-left: 41px;
-    padding-right: 41px;
-    margin-bottom: 60px;
-  }
-
-  .contacts__wrapper--form {
     padding-top: 65px;
     margin-bottom: 0;
     padding-bottom: 65px;
+    padding-left: 41px;
+    padding-right: 41px;
+  }
+
+  .contacts__wrapper--index {
+    // padding-left: 41px;
+    // padding-right: 41px;
+    margin-bottom: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .contacts__slogan {
@@ -73,14 +78,13 @@
     background-color: $white;
     margin: 0;
     width: calc(50% - 70px);
-    // justify-content: space-evenly;
-    padding-top: 65px;
+    padding-top: 66px;
     padding-left: 76px;
     padding-bottom: 60px;
     padding-right: 55px;
   }
 
-  .contacts__wrapper--form {
+  .contacts__wrapper--index {
     padding-top: 68px;
   }
 
