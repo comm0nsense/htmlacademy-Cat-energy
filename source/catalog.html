@@ -34,32 +34,30 @@
     }
 
     body {
-      opacity: 1;
+      opacity: 0.5;
     }
 
   </style>
 
   <header class="page-header">
     <div class="container page-header__wrapper">
-      <a class="page-header__logo logo" href="index.html">
+      <a class="page-header__logo logo">
         <img class="logo__image" src="https://via.placeholder.com/191x38" width="191" height="38"
           alt="Кэт энерджи Лого">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--index main-nav--closed">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__item-link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__item-link main-nav__item-link--active">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__item-link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list site-nav">
+          <li class="site-nav__item">
+            <a class="site-nav__item-link" href="index.html">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__item-link site-nav__item--active">Каталог продукции</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__item-link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
