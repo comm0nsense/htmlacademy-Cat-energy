@@ -1,3 +1,29 @@
+.product {
+  position: relative;
+}
+
+.product::before {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 1px;
+  background-color: $grey-medium-lighter;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.product--active::after {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 1px;
+  background-color: $grey-medium-lighter;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
 .product--active {
   padding-bottom: 25px;
 }
@@ -7,14 +33,11 @@
   flex: wrap;
   justify-content: space-between;
   padding-top: 20px;
-  padding-bottom: 19px;
+  padding-bottom: 22px;
 }
 
 .product__link {
   width: 50%;
-  // display: block;
-  // width: 100%;
-  // height: 100%;
   position: relative;
 }
 
@@ -33,14 +56,14 @@
   @include fonts(400, 16px, 20px, $black-lighter);
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   padding-right: 65px;
 }
 
 .product__title--all {
   margin-bottom: 8px;
   margin-top: 0;
-  padding-top: 85px;
+  padding-top: 80px;
   padding-right: 0;
   text-align: center;
   position: relative;
@@ -52,8 +75,8 @@
   height: 30px;
   background-color: $grey-dark-light;
   position: absolute;
-  left: 100px;
-  top: 19px;
+  left: 139px;
+  top: 25px;
 }
 
 .product__title--all::after {
@@ -62,8 +85,8 @@
   height: 2px;
   background-color: $grey-dark-light;
   position: absolute;
-  left: 86px;
-  top: 32px;
+  left: 125px;
+  top: 39px;
 }
 
 .product__slogan {
@@ -72,7 +95,7 @@
   font-size: 12px;
   line-height: 16px;
   color: $grey;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
 .product__table {
@@ -86,10 +109,12 @@
   font-size: 12px;
   line-height: 16px;
   color: $grey;
+  padding: 0;
 }
 
 .product__table-details {
   text-align: right;
+  padding-right: 1px;
 }
 
 @media (min-width: $tablet-width) {

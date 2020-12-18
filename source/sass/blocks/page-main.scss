@@ -5,7 +5,35 @@
 .page-main__title--catalog {
   @include fonts(400, 36px, 36px, $black);
   text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 40px;
+  position: relative;
 }
+
+.page-main__title--catalog::before {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 1px;
+  background-color: $grey-medium-lighter;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.page-main__title--catalog::after {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 1px;
+  background-color: $grey-medium-lighter;
+  top: 103px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
 .page-main__form-title {
   @include fonts(400, 36px, 36px, $black);
