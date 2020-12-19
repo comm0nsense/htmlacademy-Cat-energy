@@ -36,13 +36,39 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    // margin: 0 38px;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-bottom: 27px;
   }
 
   .extra__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 26px;
+    margin-bottom: 5px;
+  }
+
+  .extra__title {
+    font-size: 20px;
+    line-height: 20px;
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .extra__details-wrapper {
+    width: 50%;
+    justify-content: flex-end;
+  }
+
+  .extra__detail {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 49px;
+  }
+
+  .extra__detail:first-child {
+    margin-left: 0;
   }
 }
 

@@ -16,9 +16,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .extras {
+    margin-bottom: 75px;
+  }
+
+  .extras__gift-wrapper {
+    margin-bottom: 0;
+  }
+
   .extras__list {
-    padding-left: 38px;
-    padding-right: 38px;
+    margin-bottom: 67px;
   }
 
   .extras__title {
@@ -26,6 +33,7 @@
     padding-right: 38px;
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 80px;
   }
 
   .extras__item {
@@ -33,8 +41,7 @@
   }
 
   .extras__button {
-    // margin: 28px 30px;
-    @include col-1(80px);
+    width: 100%;
   }
 }
 

@@ -1,6 +1,6 @@
 .gift {
   background-color: $green;
-  min-height: 289px;
+  height: 289px;
 }
 
 .gift__slogan {
@@ -20,4 +20,22 @@
   position: absolute;
   top: 58px;
   left: 100px;
+}
+
+@media (min-width: $tablet-width) {
+  .gift {
+    height: auto;
+  }
+
+  .gift__slogan {
+    padding-top: 72px;
+    padding-bottom: 71px;
+    padding-right: 38px;
+    text-align: left;
+    margin-left: 423px;
+  }
+
+  .gift__slogan::before {
+    left: -345px;
+  }
 }
