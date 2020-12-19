@@ -56,6 +56,14 @@
     @include col-3(80px);
   }
 
+  .extras__title {
+    padding: 0;
+  }
+
+  .extras__button {
+    @include col-1(80px);
+  }
+
   .extras__gift-wrapper {
     @include col-1(80px);
   }
