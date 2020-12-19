@@ -21,35 +21,12 @@
   padding-bottom: 11px;
 }
 
-@media (min-width: $tablet-width) {
-  .button--catalog {
-    @include fonts(400, 20px, 26px, $white);
-    padding: 14px 26px;
-    display: inline-block;
-  }
-}
-
 .button--submit {
   font-size: 16px;
   line-height: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
-}
-
-@media (min-width: $tablet-width) {
-  .button--submit {
-    font-size: 20px;
-    padding-top: 16px;
-    padding-bottom: 15px;
-    width: calc(50% - 30px);
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .button--submit {
-    width: calc(50% - 40px);
-  }
 }
 
 .button--show-all {
@@ -62,4 +39,34 @@
 .button--order {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.button--order-extra {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .button--catalog {
+    @include fonts(400, 20px, 26px, $white);
+    padding: 14px 26px;
+    display: inline-block;
+  }
+
+  .button--submit {
+    font-size: 20px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    width: calc(50% - 30px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button--submit {
+    width: calc(50% - 40px);
+  }
+
+  .button--order-extra {
+    width: calc(100% / 3 - 52px);
+  }
 }

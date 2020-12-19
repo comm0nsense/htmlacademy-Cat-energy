@@ -39,3 +39,19 @@
     left: -345px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .gift__slogan {
+    margin: 0;
+    padding-top: 186px;
+    padding-left: 41px;
+    padding-right: 43px;
+    padding-bottom: 42px;
+    text-align: center;
+  }
+
+  .gift__slogan::before {
+    top: 57px;
+    left: 84px;
+  }
+}

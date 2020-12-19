@@ -39,13 +39,13 @@
   .extras__item {
     border-top: 1px solid $grey-medium;
   }
-
-  .extras__button {
-    width: 100%;
-  }
 }
 
 @media (min-width: $desktop-width) {
+  .extras {
+    margin-bottom: 90px;
+  }
+
   .extras__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -54,17 +54,14 @@
 
   .extras__list {
     @include col-3(80px);
-  }
-
-  .extras__title {
-    padding: 0;
-  }
-
-  .extras__button {
-    @include col-1(80px);
+    margin-bottom: 0;
   }
 
   .extras__gift-wrapper {
     @include col-1(80px);
+  }
+
+  .extras__title {
+    padding: 0;
   }
 }
