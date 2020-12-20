@@ -11,7 +11,7 @@
 }
 
 .social__item {
-  margin-right: 36px;
+  margin-right: 35px;
 }
 
 .social__item:last-child {
@@ -22,13 +22,27 @@
   display: block;
 }
 
+.social__link--facebook {
+  margin-top: -2px;
+  margin-right: 5px;
+}
+
 .social__link:hover path {
   fill: $green;
+}
+
+.social__link--facebook:hover path {
+  stroke: $green;
+  fill: none;
 }
 
 .social__link:active path {
   fill: $green;
   opacity: 0.3;
+}
+
+.social__link--facebook:active path {
+  fill: none;
 }
 
 @media (min-width: $tablet-width) {
