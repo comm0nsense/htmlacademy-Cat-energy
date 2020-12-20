@@ -31,11 +31,6 @@
   opacity: 0.3;
 }
 
-.social__link--facebook:active {
-  fill: none;
-  stroke: $green;
-}
-
 @media (min-width: $tablet-width) {
   .social__list {
     border: none;
