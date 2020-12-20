@@ -83,17 +83,26 @@
   }
 
   .extra__wrapper {
+    @include col-2-extra(80px);
     margin: 0;
-    width: calc(100% / 3 * 2);
     padding: 0;
   }
 
   .extra__title {
-    @include col-3-extra(80px);
+    @include col-1-extra(80px);
+    margin-right: 80px;
   }
 
   .extra__details-wrapper {
-    width: 46%;
-    justify-content: space-between;
+    justify-content: flex-start;
+    padding-top: 5px;
+  }
+
+  .extra__detail {
+    margin: 0;
+  }
+
+  .extra__detail:first-child {
+    width: 75%;
   }
 }
