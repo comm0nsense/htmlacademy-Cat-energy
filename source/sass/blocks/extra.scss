@@ -89,7 +89,7 @@
   }
 
   .extra__title {
-    width: 54%;
+    @include col-3-extra(80px);
   }
 
   .extra__details-wrapper {

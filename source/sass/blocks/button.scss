@@ -67,6 +67,8 @@
   }
 
   .button--order-extra {
-    width: calc(100% / 3 - 52px);
+    // width: calc(100% / 3 - 52px);
+    // width: calc(100% / 3 - 80px * 2 / 3);
+    @include col-3-extra(80px);
   }
 }
