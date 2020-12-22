@@ -32,15 +32,11 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    // padding-top: 55px;
-    // padding-bottom: 61px;
-    padding: 0;
+    padding-top: 55px;
+    padding-bottom: 61px;
   }
 
   .page-footer__wrapper {
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: flex-start;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
@@ -55,6 +51,5 @@
     border: none;
     margin: 0;
     padding: 0;
-    // padding-top: 3px;
   }
 }
