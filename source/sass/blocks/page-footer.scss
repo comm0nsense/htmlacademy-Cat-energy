@@ -10,10 +10,6 @@
   margin-bottom: 27px;
 }
 
-.page-footer__logo-image {
-  display: block;
-}
-
 .page-footer__logo-image:hover {
   opacity: 0.8;
 }
@@ -32,8 +28,8 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    padding-top: 55px;
-    padding-bottom: 61px;
+    padding-top: 49px;
+    padding-bottom: 67px;
   }
 
   .page-footer__wrapper {
@@ -47,9 +43,19 @@
     margin-bottom: 0;
   }
 
+  .page-footer__logo-image {
+    display: block;
+  }
+
   .page-footer__social {
     border: none;
     margin: 0;
     padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding-top: 55px;
   }
 }
