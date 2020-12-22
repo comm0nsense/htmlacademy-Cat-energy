@@ -1,17 +1,13 @@
-.social__list {
+.social {
   list-style: none;
-  // border-bottom: 1px solid $grey-dark;
-  // border-top: 1px solid $grey-dark;
-  // margin: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding: 0;
-}
-
-.social__item {
-  margin-right: 38px;
+  margin-left: 73px;
+  margin-right: 77px;
 }
 
 .social__item:last-child {
@@ -20,11 +16,6 @@
 
 .social__link {
   display: block;
-}
-
-.social__link--facebook {
-  // margin-top: -2px;
-  // margin-right: 5px;
 }
 
 .social__link:hover path {
@@ -46,16 +37,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .social__list {
-    border: none;
-  }
-
-  .social__item {
-    padding: 0;
-  }
-
-  .social__svg {
-    width: 30px;
-    height: 22px;
+  .social {
+    margin-left: 48px;
+    margin-right: 59px;
+    min-height: 33px;
   }
 }
