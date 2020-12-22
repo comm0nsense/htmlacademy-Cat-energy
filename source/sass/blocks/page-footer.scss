@@ -32,6 +32,16 @@
     padding-bottom: 67px;
   }
 
+  .page-footer--index {
+    padding-top: 55px;
+    padding-bottom: 61px;
+  }
+
+  .page-footer--form {
+    padding-top: 52px;
+    padding-bottom: 64px;
+  }
+
   .page-footer__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -55,7 +65,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer {
+  .page-footer,
+  .page-footer--form {
     padding-top: 55px;
+    padding-bottom: 61px;
   }
 }
