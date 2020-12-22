@@ -1,29 +1,77 @@
 .extras__title {
   @include fonts(400, 24px, 24px, $black);
+  margin-top: 0;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.extras__title::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100vw;
+  background-color: $green;
+  top: 15px;
+  left: calc(100% - 33px);
 }
 
 .extras__list {
   list-style: none;
   margin: 0;
+  margin-bottom: 36px;
   padding: 0;
 }
 
+.extras__gift-wrapper {
+  margin-bottom: 33px;
+}
+
 @media (min-width: $tablet-width) {
-  .extras__item {
-    border-top: 1px solid $grey-medium;
+  .extras {
+    margin-bottom: 75px;
+  }
+
+  .extras__gift-wrapper {
+    margin-bottom: 0;
+  }
+
+  .extras__list {
+    margin-bottom: 67px;
   }
 
   .extras__title {
-    margin-left: 38px;
+    padding-left: 38px;
+    padding-right: 38px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 80px;
   }
 
-  .extras__button {
-    // margin: 28px 30px;
-    @include col-1(80px);
+  .extras__title::after {
+    left: calc(100% - 297px);
+    top: 21px;
+  }
+
+  .extras__title::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100vw;
+    background-color: $green;
+    right: 100%;
+    top: 22px;
+  }
+
+  .extras__item {
+    border-top: 1px solid $grey-medium;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .extras {
+    margin-bottom: 90px;
+  }
+
   .extras__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -32,9 +80,24 @@
 
   .extras__list {
     @include col-3(80px);
+    margin-bottom: 0;
   }
 
   .extras__gift-wrapper {
     @include col-1(80px);
+  }
+
+  .extras__title {
+    padding: 0;
+  }
+
+  .extras__title::after {
+    left: calc(100% - 848px);
+    top: 23px;
+  }
+
+  .extras__title::before {
+    right: calc(100% + 40px);
+    top: 23px;
   }
 }

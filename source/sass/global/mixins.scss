@@ -24,3 +24,11 @@
 @mixin col-3 ($gap) {
   width: calc((100% / 4 - #{$gap} * 3 / 4) * 3 + #{$gap} * 2);
 }
+
+@mixin col-1-extra ($gap) {
+  width: calc(100% / 3 - #{$gap} * 2 / 3);
+}
+
+@mixin col-2-extra ($gap) {
+  width: calc((100% / 3 - #{$gap} * 2 / 3) * 2 + #{$gap} * 2);
+}

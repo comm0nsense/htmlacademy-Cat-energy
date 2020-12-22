@@ -4,7 +4,23 @@
   margin: 0;
 }
 
+.catalog__list-wrapper {
+  margin-bottom: 25px;
+}
+
+.catalog__item {
+  margin-bottom: 25px;
+}
+
+.catalog__item:last-child {
+  margin-bottom: 0;
+}
+
 @media (min-width: $tablet-width) {
+  .catalog__list-wrapper {
+    margin-bottom: 66px;
+  }
+
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
@@ -14,6 +30,7 @@
   .catalog__item {
     @include col-2(60px);
     margin-right: 60px;
+    margin-bottom: 59px;
   }
 
   .catalog__item:nth-child(2n) {
@@ -22,6 +39,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog__list-wrapper {
+    margin-bottom: 15px;
+  }
+
   .catalog__item {
     @include col-1(80px);
     margin-right: 80px;
@@ -33,5 +54,9 @@
 
   .catalog__item:nth-child(4n) {
     margin-right: 0;
+  }
+
+  .catalog__item:last-child {
+    margin-bottom: 59px;
   }
 }

@@ -1,21 +1,57 @@
 .gift {
   background-color: $green;
+  height: 289px;
 }
 
 .gift__slogan {
   font-size: 16px;
   line-height: 20px;
   color: $white;
-  padding-top: 187px;
-  padding-bottom: 42px;
+  padding-top: 186px;
+  padding-bottom: 25px;
   text-align: center;
   position: relative;
-  margin-top: 41px;
-  margin-bottom: 33px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .gift__slogan::before {
   content: url("../img/icon_gift.svg");
   position: absolute;
-  top: 59px;
+  top: 58px;
+  left: 100px;
+}
+
+@media (min-width: $tablet-width) {
+  .gift {
+    height: auto;
+  }
+
+  .gift__slogan {
+    padding-top: 72px;
+    padding-bottom: 71px;
+    padding-right: 38px;
+    text-align: left;
+    margin-left: 423px;
+  }
+
+  .gift__slogan::before {
+    left: -345px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift__slogan {
+    margin: 0;
+    padding-top: 186px;
+    padding-left: 41px;
+    padding-right: 43px;
+    padding-bottom: 42px;
+    text-align: center;
+  }
+
+  .gift__slogan::before {
+    top: 57px;
+    left: 84px;
+  }
 }

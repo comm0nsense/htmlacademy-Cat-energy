@@ -21,7 +21,8 @@
   .site-nav__item {
     @include fonts(400, 18px, 24px, $black);
     margin-left: 35px;
-    padding-bottom: 8px;
+    // padding-bottom: 5px;
+    padding-bottom: 0;
     padding-top: 0;
     border: none;
   }
@@ -42,19 +43,23 @@
     margin-left: 0;
   }
 
-  .site-nav__item-link--form {
-    padding-bottom: 5px;
+  .site-nav__item-link {
+    padding-bottom: 6px;
+  }
+
+  .site-nav__item-link--index {
+    padding-bottom: 8px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-nav__item-link {
-    @include fonts(400, 20px, 30px, $white);
+    @include fonts(400, 20px, 30px, $black);
+    padding-bottom: 6px;
   }
 
-  .site-nav__item-link--form {
-    color: $black;
-    padding-bottom: 6px;
+  .site-nav__item-link--index {
+    color: $white;
   }
 
   .site-nav__item--index {
