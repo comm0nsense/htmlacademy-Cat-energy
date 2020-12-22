@@ -38,8 +38,15 @@
 
 @media (min-width: $tablet-width) {
   .social {
-    margin-left: 48px;
-    margin-right: 59px;
-    min-height: 33px;
+    margin: 0;
+    justify-content: center;
+  }
+
+  .social__link--vkontakte {
+    margin-right: 27px;
+  }
+
+  .social__link--instagram {
+    margin-right: 21px;
   }
 }
