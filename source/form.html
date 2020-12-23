@@ -41,8 +41,11 @@
   <header class="page-header">
     <div class="container page-header__wrapper">
       <a class="page-header__logo logo">
-        <img class="logo__image" src="https://via.placeholder.com/191x38" width="191" height="38"
-          alt="Кэт энерджи Лого">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="logo__image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт энерджи">
+        </picture>
       </a>
       <nav class="main-nav main-nav--index main-nav--closed">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>

@@ -19,12 +19,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 75px;
+    margin-bottom: 60px;
     padding-top: 25px;
   }
 
   .page-header__logo {
     padding: 0;
+    flex-shrink: 0;
   }
 
   .page-header__button-wrapper {
@@ -53,14 +54,15 @@
 
   .page-header__wrapper {
     background: transparent;
+    padding-top: 53px;
   }
 
   .page-header__wrapper--index {
-    margin-bottom: 123px;
+    margin-bottom: 107px;
   }
 
   .page-header__wrapper--catalog {
-    margin-bottom: 90px;
+    margin-bottom: 72px;
   }
 
   .page-header__button-wrapper {
