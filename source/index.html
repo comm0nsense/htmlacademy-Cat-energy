@@ -35,7 +35,7 @@
     }
 
     body {
-      opacity: 0.5;
+      opacity: 1;
     }
 
   </style>
@@ -76,7 +76,11 @@
       </div>
       <div class="container">
         <div class="page-header__button-wrapper">
-          <img class="promo__image-can" src="img/index-can-mobile.png" alt="">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/index-can-desktop.png">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet.png">
+            <img class="promo__image-can" src="img/index-can-mobile.png" alt="">
+          </picture>
           <a class="button button--catalog" href="form.html">Подобрать программу</a>
         </div>
       </div>

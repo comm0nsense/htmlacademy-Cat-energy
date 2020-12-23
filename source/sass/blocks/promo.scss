@@ -10,8 +10,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/mobile-cat@2x.jpg"), linear-gradient(to right, #64a73c 50%, #62a53a 50%);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-size: 320px auto, auto;
   }
 }
 

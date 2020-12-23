@@ -25,36 +25,44 @@
 
 .explanation__item--ingredients::before {
   position: absolute;
+  content: "";
   width: 60px;
   height: 60px;
-  content: url("https://via.placeholder.com/60x60");
+  background-image: url("../img/ingredients.svg");
+  background-repeat: no-repeat;
   left: 0;
   top: -2px;
 }
 
 .explanation__item--product-format::before {
   position: absolute;
+  content: "";
   width: 60px;
   height: 60px;
-  content: url("https://via.placeholder.com/60x60");
+  background-image: url("../img/product-format.svg");
+  background-repeat: no-repeat;
   left: 0;
   top: -2px;
 }
 
 .explanation__item--meals-number::before {
   position: absolute;
+  content: "";
   width: 60px;
   height: 60px;
-  content: url("https://via.placeholder.com/60x60");
+  background-image: url("../img/meals-number.svg");
+  background-repeat: no-repeat;
   left: 0;
   top: -2px;
 }
 
 .explanation__item--changes::before {
   position: absolute;
+  content: "";
   width: 60px;
   height: 60px;
-  content: url("https://via.placeholder.com/60x60");
+  background-image: url("../img/changes.svg");
+  background-repeat: no-repeat;
   left: 0;
   top: -2px;
 }
