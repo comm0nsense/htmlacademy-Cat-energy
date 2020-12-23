@@ -2,11 +2,17 @@
   position: relative;
 }
 
+
 .promo__background-wrapper {
-  background-image: url("../img/mobile-cat2.jpg"), linear-gradient(to right, #64a73c 50%, #62a53a 50%);
+  background-image: url("../img/mobile-cat.jpg"), linear-gradient(to right, #64a73c 50%, #62a53a 50%);
   background-repeat: no-repeat;
   background-position: center;
-  // margin-left: -10px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mobile-cat@2x.jpg"), linear-gradient(to right, #64a73c 50%, #62a53a 50%);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .promo__text-wrapper {
@@ -17,7 +23,6 @@
 .promo__title {
   @include fonts(400, 36px, 36px, $white);
   text-align: center;
-  // margin: 0 0 0 10px;
   margin: 0;
   padding-top: 27px;
   margin-bottom: 25px;
@@ -27,7 +32,6 @@
   @include fonts(400, 14px, 14px, $white);
   text-transform: uppercase;
   text-align: center;
-  // margin-top: 0;
   margin: 0;
 }
 

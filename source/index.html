@@ -35,7 +35,7 @@
     }
 
     body {
-      opacity: 0.5;
+      opacity: 1;
     }
 
   </style>
@@ -43,8 +43,11 @@
   <header class="page-header page-header--index">
     <div class="container page-header__wrapper page-header__wrapper--index">
       <a class="page-header__logo logo">
-        <img class="logo__image" src="https://via.placeholder.com/191x38" width="191" height="38"
-          alt="Кэт энерджи Лого">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="logo__image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт энерджи">
+        </picture>
       </a>
       <nav class="main-nav main-nav--index main-nav--closed">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -231,7 +234,8 @@
           <li class="social__item">
             <a class="social__link social__link--facebook" href="#">
               <span class="visually-hidden">Мы в Фейсбуке</span>
-              <svg class="social__svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="social__svg" width="22" height="22" viewBox="0 0 22 22" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M16.5 1.83325H13.75C12.5344 1.83325 11.3686 2.30674 10.5091 3.14957C9.64956 3.99239 9.16667 5.1355 9.16667 6.32743V9.02394H6.41667V12.6193H9.16667V19.81H12.8333V12.6193H15.5833L16.5 9.02394H12.8333V6.32743C12.8333 6.08905 12.9299 5.86042 13.1018 5.69186C13.2737 5.52329 13.5069 5.4286 13.75 5.4286H16.5V1.83325Z"
                   stroke="#666666" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
