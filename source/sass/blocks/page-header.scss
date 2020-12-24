@@ -15,6 +15,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header--index {
+    z-index: 1;
+  }
+
   .page-header__wrapper {
     flex-direction: row;
     justify-content: space-between;
