@@ -4,7 +4,7 @@
 
 .explanation__title {
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 
 .explanation__list {
@@ -23,48 +23,58 @@
   margin-bottom: 0;
 }
 
-.explanation__item--ingredients::before {
+.explanation__item::before {
   position: absolute;
   content: "";
   width: 60px;
   height: 60px;
+  background: $green;
+  left: 0;
+  top: -2px;
+}
+
+.explanation__item--ingredients::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 32px;
   background-image: url("../img/ingredients.svg");
   background-repeat: no-repeat;
-  left: 0;
-  top: -2px;
+  left: 17px;
+  top: 15px;
 }
 
-.explanation__item--product-format::before {
+.explanation__item--product-format::after {
   position: absolute;
   content: "";
-  width: 60px;
-  height: 60px;
+  width: 29px;
+  height: 31px;
   background-image: url("../img/product-format.svg");
   background-repeat: no-repeat;
-  left: 0;
-  top: -2px;
+  left: 15px;
+  top: 12px;
 }
 
-.explanation__item--meals-number::before {
+.explanation__item--meals-number::after {
   position: absolute;
   content: "";
-  width: 60px;
-  height: 60px;
+  width: 25px;
+  height: 30px;
   background-image: url("../img/meals-number.svg");
   background-repeat: no-repeat;
-  left: 0;
-  top: -2px;
+  left: 18px;
+  top: 13px;
 }
 
-.explanation__item--changes::before {
+.explanation__item--changes::after {
   position: absolute;
   content: "";
-  width: 60px;
-  height: 60px;
+  width: 32px;
+  height: 33px;
   background-image: url("../img/changes.svg");
   background-repeat: no-repeat;
-  left: 0;
-  top: -2px;
+  left: 17px;
+  top: 14px;
 }
 
 .explanation__item-description {

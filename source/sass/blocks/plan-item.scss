@@ -1,7 +1,7 @@
 .plan-item {
   background-color: $grey-extra-light;
-  margin-bottom: 20px;
-  padding-top: 30px;
+  margin-bottom: 22px;
+  padding-top: 28px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 19px;
@@ -20,29 +20,26 @@
   position: relative;
 }
 
-.plan-item__title--weight-lose::before {
-  position: absolute;
-  content: "";
-  width: 50px;
-  height: 53px;
-  background: url("../img/cat-slim2.svg"), radial-gradient(circle at 50%, $green, $green 25px, transparent 25px);
-  background-repeat: no-repeat;
-  background-position: 6px -2px, 0 0;
-  left: 2px;
-  top: -6px;
-}
-
-.plan-item__title--weight-gain::before {
+.plan-item__title::before {
   position: absolute;
   content: "";
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background: $green;
-  // background-image: url("../img/cat-pro.svg");
-  // background-repeat: no-repeat;
   left: 2px;
   top: -6px;
+}
+
+.plan-item__title--weight-lose::after {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 60px;
+  background: url("../img/cat-slim.svg");
+  background-repeat: no-repeat;
+  left: 9px;
+  top: -9px;
 }
 
 .plan-item__title--weight-gain::after {
@@ -50,8 +47,8 @@
   content: "";
   width: 67px;
   height: 28px;
-  background-image: url("../img/cat-pro2.svg");
-  left: -8px;
+  background-image: url("../img/cat-pro.svg");
+  left: -7px;
   top: 5px;
 }
 
