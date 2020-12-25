@@ -95,23 +95,17 @@
     background-image: linear-gradient(to right, $white 50%, transparent 50%), url("../img/desktop-cat.jpg"), linear-gradient(to right, $white 50%, #64a73d 50%);
     background-repeat: no-repeat;
     background-position: right;
-    margin-bottom: 85px;
-  }
+    margin-bottom: 87px;
 
-  .page-header--index::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 50%;
-    height: 694px;
-    background-image: url("../img/index-background-desktop.jpg");
-    background-repeat: no-repeat;
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, $white 50%, transparent 50%), url("../img/desktop-cat@2x.jpg"), linear-gradient(to right, $white 50%, #64a73d 50%);
+      background-size: auto, 720px auto, auto;
+    }
   }
 
   .page-header__wrapper {
     background: transparent;
-    padding-top: 53px;
+    padding-top: 50px;
   }
 
   .page-header__wrapper--index {

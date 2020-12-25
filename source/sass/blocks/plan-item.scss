@@ -180,22 +180,26 @@
     padding-left: 162px;
   }
 
-  .plan-item__title--weight-lose::before {
-    position: absolute;
-    content: url("https://via.placeholder.com/100x106");
+  .plan-item__title::before {
     width: 100px;
-    height: 106px;
+    height: 100px;
+    top: -30px;
     left: 0;
-    top: -35px;
   }
 
-  .plan-item__title--weight-gain::before {
-    position: absolute;
-    content: url("https://via.placeholder.com/134x100");
+  .plan-item__title--weight-lose::after {
+    width: 70px;
+    height: 97px;
+    left: 14px;
+    top: -37px;
+    // top: -35px;
+  }
+
+  .plan-item__title--weight-gain::after {
     width: 134px;
-    height: 100px;
+    height: 56px;
     left: -20px;
-    top: -30px;
+    top: -10px;
   }
 
   .plan-item__description {
