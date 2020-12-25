@@ -63,17 +63,26 @@
     z-index: 1;
   }
 
+  .page-header__nav-toggle {
+    display: none;
+  }
+
   .page-header__wrapper {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    // align-items: center;
     margin-bottom: 60px;
     padding-top: 25px;
+  }
+
+  .page-header__nav-wrapper {
+    padding: 0;
   }
 
   .page-header__logo {
     padding: 0;
     flex-shrink: 0;
+    // display: block;
   }
 
   .page-header__button-wrapper {

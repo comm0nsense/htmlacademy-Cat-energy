@@ -6,7 +6,7 @@
 .promo__background-wrapper {
   background-image: url("../img/mobile-cat.jpg"), linear-gradient(to right, #64a73c 50%, #62a53a 50%);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center -30px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/mobile-cat@2x.jpg"), linear-gradient(to right, #64a73c 50%, #62a53a 50%);
@@ -74,7 +74,7 @@
     height: 609px;
     z-index: -1;
     left: 50%;
-    transform: translateX(-45%);
+    transform: translateX(-50%);
     top: 200px;
   }
 }

@@ -48,6 +48,7 @@
   width: 67px;
   height: 28px;
   background-image: url("../img/cat-pro.svg");
+  background-repeat: no-repeat;
   left: -7px;
   top: 5px;
 }
@@ -111,23 +112,27 @@
     margin-bottom: 25px;
   }
 
-  .plan-item__title--weight-lose::before {
+  .plan-item__title::before {
     width: 200px;
-    height: 211px;
-    background: url("../img/cat-slim2.svg"), radial-gradient(circle at 50%, $green, $green 100px, transparent 100px);
-    background-repeat: no-repeat;
-    background-position: 29px -4px, 0 0;
-    background-size: 140px 192px, auto;
-    top: 7px;
+    height: 200px;
+    top: 13px;
     left: 394px;
   }
 
-  .plan-item__title--weight-gain::before {
-    width: 268px;
-    height: 200px;
+  .plan-item__title--weight-lose::after {
+    width: 140px;
+    height: 192px;
     background-size: 100%;
-    left: 360px;
-    top: 15px;
+    left: 423px;
+    top: 2px;
+  }
+
+  .plan-item__title--weight-gain::after {
+    width: 268px;
+    height: 112px;
+    background-size: 100%;
+    left: 359px;
+    top: 57px;
   }
 
   .plan-item__description {

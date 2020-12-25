@@ -49,6 +49,11 @@
     border: none;
   }
 
+  .site-nav__item::before,
+  .site-nav__item::after {
+    display: none;
+  }
+
   .site-nav__item:hover {
     opacity: 0.6;
   }
