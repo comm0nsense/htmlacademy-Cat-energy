@@ -178,16 +178,24 @@
           </div>
 
           <div class="example__item-filter-wrapper">
-            <div class="example__item-foto-wrapper">
+            <div class="example__foto-wrapper">
+              <div class="example__foto-before">
                 <picture>
-                  <img class="example__item-foto example__item-foto--selected" src="img/cat-fat.png"
-                    srcset="img/cat-fat@2x.png 2x" alt="Фото кота">
+                  <img class="example__cat-foto" src="img/cat-fat.png" srcset="img/cat-fat@2x.png 2x"
+                    alt="Фото толстого кота">
                 </picture>
               </div>
+              <div class="example__foto-after">
+                <div class="example__after-wrapper">
+                  <img class="example__cat-foto" src="img/cat-skinny.png" srcset="img/cat-skinny.png 2x"
+                    alt="Фото худого кота">
+                </div>
+              </div>
+            </div>
             <div class="example__item-filter">
               <label class="visually-hidden" for="before-after">Вес питомца</label>
               <span class="example__item-before-after">Было</span>
-              <input class="filter" type="range" name="before-after" id="before-after" min="1" max="2" step="0.5">
+              <input class="filter" type="range" name="before-after" id="before-after" min="1" max="2" step="0.5" oninput="updateImageWidth(this.value)">
               <span class="example__item-before-after">Стало</span>
             </div>
           </div>
@@ -269,7 +277,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="js/script.js"></script>
 </body>
 
 </html>
