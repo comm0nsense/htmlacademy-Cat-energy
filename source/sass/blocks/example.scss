@@ -69,38 +69,46 @@
 }
 
 .example__item-text-wrapper {
-  margin-bottom: 42px;
+  margin-bottom: 8px;
 }
 
 .example__foto-wrapper {
-  margin-bottom: 31px;
+  margin-bottom: 30px;
   position: relative;
-  height: 232px;
+  height: 267px;
 }
 
-.example__foto-before,
-.example__foto-after {
+.example__foto-before {
   max-width: none;
   overflow: hidden;
 }
 
-.example__cat-foto {
-  display: block;
-  position: absolute;
-  top: 0;
-}
-
-.example__foto-before {
-  height: 100%;
-}
-
 .example__foto-after {
+  max-width: none;
   position: absolute;
   top: 0;
   right: 0;
   width: 50%;
   height: 100%;
   overflow: visible;
+  background-color: $grey-medium-light;
+}
+
+.example__cat-foto {
+  display: block;
+  position: absolute;
+  max-width: none;
+  top: 0;
+}
+
+.example__cat-foto--fat {
+  top: 32px;
+  // right: -15px;
+}
+
+.example__cat-foto--skinny {
+  top: 16px;
+  right: -4px;
 }
 
 .example__foto-after::after {
@@ -120,7 +128,8 @@
 
 .example__item-filter-wrapper {
   // margin-top: 42px;
-  min-height: 320px;
+  // min-height: 320px;
+  padding-bottom: 36px;
 }
 
 .example__item-filter {
@@ -193,7 +202,23 @@
   }
 
   .example__foto-wrapper {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+    height: 520px;
+  }
+
+  .example__foto-before {
+    padding-top: 0;
+  }
+
+  .example__cat-foto--fat {
+    left: 15px;
+    top: -4px;
+  }
+
+  .example__cat-foto--skinny {
+    // left: -10px;
+    right: 57px;
+    top: -5px;
   }
 
   .example__item-filter-wrapper {
@@ -229,7 +254,8 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    background: linear-gradient(to bottom, $white 30%, $grey-medium-light 30%, $grey-medium-light 70%, $grey-medium-light 100%);
+    // background: linear-gradient(to bottom, $white 30%, transparent 30%, transparent 70%, transparent 100%), linear-gradient(to right, $grey-extra-light 50%, $grey-medium-light 50%);
+    background: linear-gradient(to bottom, $white 200px, transparent 200px, transparent 466px, transparent 666px), linear-gradient(to right, $grey-extra-light 50%, $grey-medium-light 50%);
     margin-bottom: 0;
   }
 
@@ -276,6 +302,7 @@
   }
 
   .example__item-filter-wrapper {
+    // background: linear-gradient(to bottom, $white 30%, $grey-medium-light 30%, $grey-medium-light 70%, $grey-medium-light 100%);
     width: 50%;
     min-height: auto;
     margin-top: 0;
@@ -285,6 +312,16 @@
   .example__foto-wrapper {
     min-height: 536px;
     margin-bottom: 25px;
+  }
+
+  .example__cat-foto--fat {
+    left: -39px;
+    top: 9px;
+  }
+
+  .example__cat-foto--skinny {
+    right: 13px;
+    top: 9px;
   }
 
   .example__item-filter {
