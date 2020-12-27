@@ -154,10 +154,10 @@
     </section>
     <section class="example">
       <div class="container">
-        <div class="example__item-wrapper">
-          <div class="example__item-text-wrapper">
-            <h2 class="example__item-title heading-secondary">Живой пример</h2>
-            <p class="example__item-description">
+        <div class="example__wrapper">
+          <div class="example__text-wrapper">
+            <h2 class="example__title heading-secondary">Живой пример</h2>
+            <p class="example__description">
               Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат
               без
               изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
@@ -177,33 +177,35 @@
             </div>
           </div>
 
-          <div class="example__item-filter-wrapper">
-            <div class="example__foto-wrapper">
-              <div class="example__foto-before">
+          <div class="example__slider-wrapper">
+            <!-- <div class="example__foto-wrapper"> -->
+            <div class="example__foto-before">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/cat-fat-tablet.png">
+                <source media="(min-width: 768px)" srcset="img/cat-fat-tablet.png">
+                <img class="example__cat-foto example__cat-foto--fat" src="img/cat-fat.png"
+                  srcset="img/cat-fat@2x.png 2x" alt="Фото толстого кота">
+              </picture>
+            </div>
+            <div class="example__foto-after">
+              <div class="example__after-wrapper">
                 <picture>
-                  <source media="(min-width: 1280px)" srcset="img/cat-fat-tablet.png">
-                  <source media="(min-width: 768px)" srcset="img/cat-fat-tablet.png">
-                  <img class="example__cat-foto example__cat-foto--fat" src="img/cat-fat.png" srcset="img/cat-fat@2x.png 2x"
-                    alt="Фото толстого кота">
-                </picture>
-              </div>
-              <div class="example__foto-after">
-                <div class="example__after-wrapper">
-                  <picture>
-                    <source media="(min-width: 1280px)" srcset="img/cat-skinny-tablet.png">
-                      <source media="(min-width: 768px)" srcset="img/cat-skinny-tablet.png">
+                  <source media="(min-width: 1280px)" srcset="img/cat-skinny-tablet.png">
+                  <source media="(min-width: 768px)" srcset="img/cat-skinny-tablet.png">
                   <img class="example__cat-foto example__cat-foto--skinny" src="img/cat-skinny.png"
                     alt="Фото худого кота">
-                  </picture>
-                </div>
+                </picture>
               </div>
             </div>
-            <div class="example__item-filter">
-              <label class="visually-hidden" for="before-after">Вес питомца</label>
-              <span class="example__item-before-after">Было</span>
-              <input class="filter" type="range" name="before-after" id="before-after" min="1" max="2" step="0.5"
-                oninput="updateImageWidth(this.value)">
-              <span class="example__item-before-after">Стало</span>
+            <!-- </div> -->
+            <div class="example__filter-wrapper">
+              <div class="example__filter">
+                <label class="visually-hidden" for="before-after">Вес питомца</label>
+                <span class="example__before-after">Было</span>
+                <input class="filter" type="range" name="before-after" id="before-after" min="1" max="2" step="0.5"
+                  oninput="updateImageWidth(this.value)">
+                <span class="example__before-after">Стало</span>
+              </div>
             </div>
           </div>
         </div>
