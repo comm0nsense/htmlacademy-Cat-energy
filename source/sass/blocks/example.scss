@@ -167,7 +167,7 @@
   .example__description {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 51px;
+    margin-bottom: 52px;
   }
 
   .example__details-wrapper {
@@ -285,8 +285,8 @@
   .example__text-wrapper {
     width: 50%;
     padding-right: 171px;
-    padding-top: 65px;
-    padding-bottom: 75px;
+    padding-top: 60px;
+    padding-bottom: 70px;
     margin-bottom: 0;
   }
 
@@ -318,7 +318,7 @@
   .example__slider-wrapper {
     // background: linear-gradient(to bottom, $white 30%, $grey-medium-light 30%, $grey-medium-light 70%, $grey-medium-light 100%);
     width: 50%;
-    min-height: 666px;
+    min-height: 656px;
     margin-top: 0;
     position: relative;
   }
@@ -335,12 +335,16 @@
 
   .example__cat-foto--fat {
     left: -39px;
-    top: 9px;
+    top: 3px;
   }
 
   .example__cat-foto--skinny {
     right: 12px;
-    top: 9px;
+    top: 2px;
+  }
+
+  .example__filter-wrapper {
+    bottom: 68px;
   }
 
   .example__filter {
