@@ -1,3 +1,9 @@
+.copyright {
+  display: flex;
+  flex-wrap: width;
+  justify-content: flex-end;
+}
+
 .copyright__link {
   font-size: 16px;
   line-height: 18px;

@@ -49,8 +49,10 @@
   }
 
   .page-footer__logo {
-    text-align: left;
     margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   .page-footer__logo-image {

@@ -6,17 +6,83 @@
   background-color: $white;
   display: flex;
   flex-direction: column;
+  padding-top: 11px;
 }
 
-.page-header__logo {
-  min-height: 66px;
+.page-header__nav-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+}
+
+.page-header__nav-toggle {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  position: relative;
+}
+
+.menu-button--closed .menu-button__icon::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: $black;
+  box-shadow: 0 9px 0 0 $black, 0 18px 0 0 $black;
+  left: 0;
+  top: 0;
+}
+
+.menu-button--opened .menu-button__icon {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: $black;
+    left: 0;
+    top: 10px;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .page-header--index {
+    z-index: 1;
+  }
+
+  .page-header__nav-toggle {
+    display: none;
+  }
+
   .page-header__wrapper {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 75px;
+    // align-items: center;
+    margin-bottom: 60px;
+    padding-top: 25px;
+  }
+
+  .page-header__nav-wrapper {
+    padding: 0;
+  }
+
+  .page-header__logo {
+    padding: 0;
+    flex-shrink: 0;
+    // display: block;
   }
 
   .page-header__button-wrapper {
@@ -29,30 +95,27 @@
     background-image: linear-gradient(to right, $white 50%, transparent 50%), url("../img/desktop-cat.jpg"), linear-gradient(to right, $white 50%, #64a73d 50%);
     background-repeat: no-repeat;
     background-position: right;
-    margin-bottom: 85px;
-  }
+    margin-bottom: 87px;
 
-  .page-header--index::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 50%;
-    height: 694px;
-    background-image: url("../img/index-background-desktop.jpg");
-    background-repeat: no-repeat;
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, $white 50%, transparent 50%), url("../img/desktop-cat@2x.jpg"), linear-gradient(to right, $white 50%, #64a73d 50%);
+      background-size: auto, 720px auto, auto;
+    }
   }
 
   .page-header__wrapper {
     background: transparent;
+    padding-top: 50px;
   }
 
   .page-header__wrapper--index {
-    margin-bottom: 123px;
+    margin-bottom: 107px;
+    padding-top: 52px;
+    align-items: center;
   }
 
   .page-header__wrapper--catalog {
-    margin-bottom: 90px;
+    margin-bottom: 72px;
   }
 
   .page-header__button-wrapper {

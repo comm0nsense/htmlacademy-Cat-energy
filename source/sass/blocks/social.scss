@@ -39,14 +39,33 @@
 @media (min-width: $tablet-width) {
   .social {
     margin: 0;
-    justify-content: center;
+    justify-content: flex-start;
+    // padding-left: 50px;
+    // padding-right: 59px;
   }
 
-  .social__link--vkontakte {
-    margin-right: 27px;
-  }
-
-  .social__link--instagram {
+  .social__item {
     margin-right: 21px;
+    flex-shrink: 0;
+  }
+
+  .social__item--vkontakte {
+    margin-right: 26px;
+    margin-left: 48px;
+  }
+
+  .social__svg--vkontakte {
+    width: 30px;
+    height: 22px;
+  }
+
+  .social__svg--instagram {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__svg--facebook {
+    width: 28px;
+    height: 33px;
   }
 }

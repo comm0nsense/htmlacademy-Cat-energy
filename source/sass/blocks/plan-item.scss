@@ -1,7 +1,7 @@
 .plan-item {
   background-color: $grey-extra-light;
-  margin-bottom: 20px;
-  padding-top: 30px;
+  margin-bottom: 22px;
+  padding-top: 28px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 19px;
@@ -20,22 +20,37 @@
   position: relative;
 }
 
-.plan-item__title--weight-lose::before {
+.plan-item__title::before {
   position: absolute;
-  content: url("https://via.placeholder.com/50x53");
+  content: "";
   width: 50px;
-  height: 53px;
+  height: 50px;
+  border-radius: 50%;
+  background: $green;
   left: 2px;
-  top: -8px;
+  top: -6px;
 }
 
-.plan-item__title--weight-gain::before {
+.plan-item__title--weight-lose::after {
   position: absolute;
-  content: url("https://via.placeholder.com/67x50");
+  content: "";
+  width: 35px;
+  height: 60px;
+  background: url("../img/cat-slim.svg");
+  background-repeat: no-repeat;
+  left: 9px;
+  top: -9px;
+}
+
+.plan-item__title--weight-gain::after {
+  position: absolute;
+  content: "";
   width: 67px;
-  height: 50px;
+  height: 28px;
+  background-image: url("../img/cat-pro.svg");
+  background-repeat: no-repeat;
   left: -7px;
-  top: -6px;
+  top: 5px;
 }
 
 .plan-item__description {
@@ -97,22 +112,27 @@
     margin-bottom: 25px;
   }
 
-  .plan-item__title--weight-lose::before {
-    position: absolute;
-    content: url("https://via.placeholder.com/200x211");
+  .plan-item__title::before {
     width: 200px;
-    height: 211px;
-    top: 5px;
+    height: 200px;
+    top: 13px;
     left: 394px;
   }
 
-  .plan-item__title--weight-gain::before {
-    position: absolute;
-    content: url("https://via.placeholder.com/268x200");
+  .plan-item__title--weight-lose::after {
+    width: 140px;
+    height: 192px;
+    background-size: 100%;
+    left: 423px;
+    top: 2px;
+  }
+
+  .plan-item__title--weight-gain::after {
     width: 268px;
-    height: 200px;
-    left: 360px;
-    top: 15px;
+    height: 112px;
+    background-size: 100%;
+    left: 359px;
+    top: 57px;
   }
 
   .plan-item__description {
@@ -160,22 +180,26 @@
     padding-left: 162px;
   }
 
-  .plan-item__title--weight-lose::before {
-    position: absolute;
-    content: url("https://via.placeholder.com/100x106");
+  .plan-item__title::before {
     width: 100px;
-    height: 106px;
+    height: 100px;
+    top: -30px;
     left: 0;
-    top: -35px;
   }
 
-  .plan-item__title--weight-gain::before {
-    position: absolute;
-    content: url("https://via.placeholder.com/134x100");
+  .plan-item__title--weight-lose::after {
+    width: 70px;
+    height: 97px;
+    left: 14px;
+    top: -37px;
+    // top: -35px;
+  }
+
+  .plan-item__title--weight-gain::after {
     width: 134px;
-    height: 100px;
+    height: 56px;
     left: -20px;
-    top: -30px;
+    top: -10px;
   }
 
   .plan-item__description {

@@ -3,15 +3,15 @@
   margin-bottom: 27px;
 }
 
-.example__item-title {
+.example__title {
   margin: 0;
   padding-top: 27px;
-  margin-bottom: 34px;
+  margin-bottom: 33px;
 }
 
-.example__item-description {
+.example__description {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .example__item-costs-title {
@@ -51,7 +51,7 @@
   border: 1px solid $grey-medium;
   border-radius: 5px;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 17px;
   margin: 0;
 }
 
@@ -68,49 +68,105 @@
   margin-bottom: 0;
 }
 
-.example__item-text-wrapper {
-  margin-bottom: 42px;
+.example__text-wrapper {
+  margin-bottom: 8px;
 }
 
-.example__item-foto-wrapper {
-  margin-bottom: 29px;
+// .example__foto-wrapper {
+//   margin-bottom: 30px;
+//   position: relative;
+//   height: 267px;
+// }
+
+.example__foto-before {
+  max-width: none;
+  overflow: hidden;
+  height: 100%;
 }
 
-.example__item-filter-wrapper {
-  // margin-top: 42px;
-  min-height: 320px;
+.example__foto-after {
+  max-width: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  overflow: visible;
+  background-color: $grey-medium-light;
 }
 
-.example__item-filter {
+.example__cat-foto {
+  display: block;
+  position: absolute;
+  max-width: none;
+  top: 0;
+}
+
+.example__cat-foto--fat {
+  top: 32px;
+  // right: -15px;
+}
+
+.example__cat-foto--skinny {
+  top: 16px;
+  right: -4px;
+}
+
+.example__foto-after::after {
+  content: "";
+  display: block;
+  position: absolute;
+  outline: 1px soli red;
+  height: calc(100% + 100px);
+  background: linear-gradient(to bottom, white, white 200px, red 201px);
+}
+
+.example__after-wrapper {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.example__slider-wrapper {
+  position: relative;
+  height: 353px;
+}
+
+.example__filter-wrapper {
+  position: absolute;
+  bottom: 36px;
+  width: 100%;
+}
+
+.example__filter {
   @include fonts(400, 16px, 20px, $black);
   text-transform: uppercase;
-  margin-right: 40px;
-  margin-left: 43px;
   display: flex;
   justify-content: space-between;
+  margin-right: 40px;
+  margin-left: 44px;
 }
 
 @media (min-width: $tablet-width) {
   .example {
-    // background: linear-gradient(to bottom, $white 55%, $grey-medium-light 55%, $grey-medium-light 45%, $grey-medium-light 100%);
-    background: linear-gradient(to bottom, $white 575px, $grey-medium-light 575px, $grey-medium-light 463px, $grey-medium-light 886px);
+    background: linear-gradient(to bottom, $white 576px, $grey-medium-light 576px);
     margin-bottom: 65px;
   }
 
-  .example__item-title {
+  .example__title {
     padding: 0;
     margin-bottom: 65px;
   }
 
-  .example__item-text-wrapper {
+  .example__text-wrapper {
     background-color: transparent;
     margin-bottom: 84px;
   }
 
-  .example__item-description {
+  .example__description {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 51px;
+    margin-bottom: 52px;
   }
 
   .example__details-wrapper {
@@ -150,11 +206,35 @@
     padding-top: 7px;
   }
 
-  .example__item-foto-wrapper {
-    margin-bottom: 25px;
+  .example__foto-wrapper {
+    margin-bottom: 10px;
+    height: 520px;
   }
 
-  .example__item-filter-wrapper {
+  // .example__foto-before {
+  //   padding-top: 0;
+  // }
+
+  .example__foto-after {
+    background: linear-gradient(to bottom, $white 26.5%, $grey-medium-light 26.5%);
+  }
+
+  .example__cat-foto--fat {
+    left: 15px;
+    top: -4px;
+  }
+
+  .example__cat-foto--skinny {
+    // left: -10px;
+    right: 57px;
+    top: -5px;
+  }
+
+  .example__filter-wrapper {
+    bottom: 69px;
+  }
+
+  .example__slider-wrapper {
     min-height: 630px;
   }
 
@@ -163,7 +243,7 @@
     height: 502px;
   }
 
-  .example__item-filter {
+  .example__filter {
     font-size: 20px;
     line-height: 30px;
     z-index: -1;
@@ -172,43 +252,43 @@
     margin-right: 69px;
   }
 
-  .example__item-before-after {
+  .example__before-after {
     border-bottom: 1px dotted $black-transparent;
   }
 
-  .example__item-before-after:hover {
+  .example__before-after:hover {
     border-bottom: 1px solid $black-more-transparent;
   }
 
-  .example__item-before-after:active {
+  .example__before-after:active {
     border-bottom: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .example {
-    background: linear-gradient(to bottom, $white 30%, $grey-medium-light 30%, $grey-medium-light 70%, $grey-medium-light 100%);
+    background: linear-gradient(to bottom, $white 200px, transparent 200px), linear-gradient(to right, $grey-extra-light 50.5%, $grey-medium-light 49.5%);
     margin-bottom: 0;
   }
 
-  .example__item-wrapper {
+  .example__wrapper {
     display: flex;
   }
 
-  .example__item-title {
+  .example__title {
     padding: 0;
     margin-bottom: 147px;
   }
 
-  .example__item-text-wrapper {
+  .example__text-wrapper {
     width: 50%;
     padding-right: 171px;
-    padding-top: 65px;
-    padding-bottom: 75px;
+    padding-top: 60px;
+    padding-bottom: 70px;
     margin-bottom: 0;
   }
 
-  .example__item-description {
+  .example__description {
     margin-top: 0;
     margin-bottom: 67px;
   }
@@ -233,24 +313,48 @@
     padding: 0;
   }
 
-  .example__item-filter-wrapper {
+  .example__slider-wrapper {
     width: 50%;
-    min-height: auto;
+    min-height: 656px;
     margin-top: 0;
     position: relative;
   }
 
-  .example__item-foto-wrapper {
+  .example__foto-wrapper {
     min-height: 536px;
     margin-bottom: 25px;
   }
 
-  .example__item-filter {
-    margin-right: 0;
-    margin-left: 39px;
+  .example__foto-before {
+    background: linear-gradient(to bottom, $white 30.5%, $grey-extra-light 30.5%);
   }
 
-  .example__item-before-after {
+  .example__foto-after {
+    background: linear-gradient(to bottom, $white 30.5%, $grey-medium-light 30.5%);
+    width: 47%;
+  }
+
+  .example__cat-foto--fat {
+    left: -39px;
+    top: 3px;
+  }
+
+  .example__cat-foto--skinny {
+    right: 12px;
+    top: 2px;
+  }
+
+  .example__filter-wrapper {
+    bottom: 68px;
+  }
+
+  .example__filter {
+    margin-right: 0;
+    margin-left: 39px;
+    background: linear-gradient(to right, $grey-extra-light 50%, $grey-medium-light 50%);
+  }
+
+  .example__before-after {
     border-bottom: 1px dotted $black-transparent;
   }
 }
