@@ -1,7 +1,15 @@
+.checkbox {
+  padding-bottom: 26px;
+}
+
 .checkbox__item {
-  margin-bottom: 24px;
+  margin-bottom: 23px;
   padding-left: 46px;
   position: relative;
+}
+
+.checkbox__item:last-child {
+  margin-bottom: 0;
 }
 
 .checkbox__item-label {
@@ -46,6 +54,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding-bottom: 0;
   }
 
   .checkbox__item {
