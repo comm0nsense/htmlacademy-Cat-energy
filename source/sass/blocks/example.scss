@@ -149,8 +149,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    // background: linear-gradient(to bottom, $white 55%, $grey-medium-light 55%, $grey-medium-light 45%, $grey-medium-light 100%);
-    background: linear-gradient(to bottom, $white 575px, $grey-medium-light 575px, $grey-medium-light 463px, $grey-medium-light 886px);
+    background: linear-gradient(to bottom, $white 576px, $grey-medium-light 576px);
     margin-bottom: 65px;
   }
 
@@ -217,7 +216,7 @@
   // }
 
   .example__foto-after {
-    background: linear-gradient(to bottom, $white 26.5%, $grey-medium-light 26.5%, $grey-medium-light 73.5%, $grey-medium-light 100%);
+    background: linear-gradient(to bottom, $white 26.5%, $grey-medium-light 26.5%);
   }
 
   .example__cat-foto--fat {
@@ -268,8 +267,7 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    // background: linear-gradient(to bottom, $white 30%, transparent 30%, transparent 70%, transparent 100%), linear-gradient(to right, $grey-extra-light 50%, $grey-medium-light 50%);
-    background: linear-gradient(to bottom, $white 200px, transparent 200px, transparent 466px, transparent 666px), linear-gradient(to right, $grey-extra-light 50%, $grey-medium-light 50%);
+    background: linear-gradient(to bottom, $white 200px, transparent 200px), linear-gradient(to right, $grey-extra-light 50.5%, $grey-medium-light 49.5%);
     margin-bottom: 0;
   }
 
@@ -316,7 +314,6 @@
   }
 
   .example__slider-wrapper {
-    // background: linear-gradient(to bottom, $white 30%, $grey-medium-light 30%, $grey-medium-light 70%, $grey-medium-light 100%);
     width: 50%;
     min-height: 656px;
     margin-top: 0;
@@ -328,8 +325,12 @@
     margin-bottom: 25px;
   }
 
+  .example__foto-before {
+    background: linear-gradient(to bottom, $white 30.5%, $grey-extra-light 30.5%);
+  }
+
   .example__foto-after {
-    background: linear-gradient(to bottom, $white 30%, $grey-medium-light 30%, $grey-medium-light 70%, $grey-medium-light 100%);
+    background: linear-gradient(to bottom, $white 30.5%, $grey-medium-light 30.5%);
     width: 47%;
   }
 
@@ -350,6 +351,7 @@
   .example__filter {
     margin-right: 0;
     margin-left: 39px;
+    background: linear-gradient(to right, $grey-extra-light 50%, $grey-medium-light 50%);
   }
 
   .example__before-after {
