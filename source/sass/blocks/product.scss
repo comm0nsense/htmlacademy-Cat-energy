@@ -206,8 +206,10 @@
 
 @media (min-width: $desktop-width) {
   .product {
-    padding-left: 38px;
-    padding-right: 38px;
+    padding-left: 39px;
+    padding-right: 33px;
+    padding-top: 1px;
+    padding-bottom: 0;
   }
 
   .product--active {
@@ -222,12 +224,12 @@
   }
 
   .product__link {
-    margin-bottom: 2px;
+    margin-bottom: 44px;
   }
 
   .product__title {
     line-height: 21px;
-    padding-left: 17px;
+    padding-left: 15px;
     padding-right: 17px;
     margin-bottom: 19px;
   }
