@@ -33,7 +33,7 @@
   flex: wrap;
   justify-content: space-between;
   padding-top: 20px;
-  padding-bottom: 22px;
+  padding-bottom: 8px;
 }
 
 .product__wrapper--active {
@@ -44,21 +44,6 @@
 .product__link {
   width: 50%;
   position: relative;
-}
-
-.product__link-image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.product__link-image--small {
-  top: 65%;
-}
-
-.product__link-image--large {
-  top: 60%;
 }
 
 .product__info {
@@ -176,14 +161,6 @@
 
   .product__info {
     width: 100%;
-  }
-
-  .product__link-image--small {
-    top: 49%;
-  }
-
-  .product__link-image--large {
-    top: 45%;
   }
 
   .product__title {
