@@ -146,7 +146,7 @@
 
 .form__input:focus {
   border: 2px solid $grey;
-  padding-left: 17px;
+  padding-left: 12px;
 }
 
 .form__input--textarea:focus {
@@ -291,6 +291,10 @@
   .form__input::placeholder {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .form__input:focus {
+    padding-left: 17px;
   }
 
   .form__input-email-icon {
