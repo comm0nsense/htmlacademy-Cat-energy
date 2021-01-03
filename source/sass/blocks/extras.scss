@@ -45,11 +45,12 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 80px;
+    display: inline-block;
   }
 
   .extras__title::after {
-    left: calc(100% - 297px);
     top: 21px;
+    left: 100%;
   }
 
   .extras__title::before {
@@ -88,12 +89,13 @@
   }
 
   .extras__title {
-    padding: 0;
+    padding-left: 0;
+    padding-right: 35px;
     margin-bottom: 82px;
   }
 
   .extras__title::after {
-    left: calc(100% - 848px);
+    // left: calc(100% - 848px);
     top: 23px;
   }
 
