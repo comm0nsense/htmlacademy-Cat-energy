@@ -146,7 +146,7 @@
 
 .form__input:focus {
   border: 2px solid $grey;
-  padding-left: 17px;
+  padding-left: 12px;
 }
 
 .form__input--textarea:focus {
@@ -184,7 +184,7 @@
 }
 
 .form__button {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 @media (min-width: $tablet-width) {
@@ -293,6 +293,10 @@
     line-height: 30px;
   }
 
+  .form__input:focus {
+    padding-left: 17px;
+  }
+
   .form__input-email-icon {
     right: 14px;
     top: 20px;
@@ -330,7 +334,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 70px;
+    margin-bottom: 68px;
   }
 
   .form__fieldset--cat {
@@ -383,7 +387,7 @@
   }
 
   .form__button-wrapper {
-    margin-bottom: 85px;
+    margin-bottom: 82px;
   }
 
   .form__button {

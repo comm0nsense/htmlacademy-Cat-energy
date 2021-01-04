@@ -18,17 +18,17 @@
 .extras__list {
   list-style: none;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 39px;
   padding: 0;
 }
 
 .extras__gift-wrapper {
-  margin-bottom: 33px;
+  margin-bottom: 34px;
 }
 
 @media (min-width: $tablet-width) {
   .extras {
-    margin-bottom: 75px;
+    margin-bottom: 73px;
   }
 
   .extras__gift-wrapper {
@@ -45,11 +45,12 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 80px;
+    display: inline-block;
   }
 
   .extras__title::after {
-    left: calc(100% - 297px);
     top: 21px;
+    left: 100%;
   }
 
   .extras__title::before {
@@ -69,7 +70,7 @@
 
 @media (min-width: $desktop-width) {
   .extras {
-    margin-bottom: 90px;
+    margin-bottom: 85px;
   }
 
   .extras__wrapper {
@@ -88,11 +89,13 @@
   }
 
   .extras__title {
-    padding: 0;
+    padding-left: 0;
+    padding-right: 35px;
+    margin-bottom: 82px;
   }
 
   .extras__title::after {
-    left: calc(100% - 848px);
+    // left: calc(100% - 848px);
     top: 23px;
   }
 

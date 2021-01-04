@@ -1,5 +1,6 @@
 .page-header {
   position: relative;
+  overflow-x: hidden;
 }
 
 .page-header__wrapper {
@@ -105,13 +106,13 @@
 
   .page-header__wrapper {
     background: transparent;
-    padding-top: 50px;
+    padding-top: 53px;
+    align-items: center;
   }
 
   .page-header__wrapper--index {
     margin-bottom: 107px;
     padding-top: 52px;
-    align-items: center;
   }
 
   .page-header__wrapper--catalog {
