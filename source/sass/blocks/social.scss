@@ -16,9 +16,14 @@
 
 .social__link {
   display: block;
+  fill: $grey-extra;
 }
 
-.social__link:hover path {
+.social__link--facebook {
+  fill: none;
+}
+
+.social__link:hover {
   fill: $green;
 }
 
@@ -27,7 +32,7 @@
   fill: none;
 }
 
-.social__link:active path {
+.social__link:active {
   fill: $green;
   opacity: 0.3;
 }
