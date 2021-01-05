@@ -19,17 +19,8 @@
   fill: $grey-extra;
 }
 
-.social__link--facebook {
-  fill: none;
-}
-
 .social__link:hover {
   fill: $green;
-}
-
-.social__link--facebook:hover path {
-  stroke: $green;
-  fill: none;
 }
 
 .social__link:active {
@@ -37,8 +28,19 @@
   opacity: 0.3;
 }
 
-.social__link--facebook:active path {
+.social__link--facebook {
+  stroke: $grey-extra;
   fill: none;
+}
+
+.social__link--facebook:hover {
+  fill: none;
+  stroke: $green;
+}
+
+.social__link--facebook:active {
+  fill: none;
+  stroke: $green;
 }
 
 @media (min-width: $tablet-width) {
@@ -72,5 +74,17 @@
   .social__svg--facebook {
     width: 28px;
     height: 33px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    padding-left: 135px;
+    padding-right: 135px;
+  }
+
+  .social__item--vkontakte {
+    margin-left: 0;
+    margin-right: 25px;
   }
 }
