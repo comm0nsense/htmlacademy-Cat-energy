@@ -95,19 +95,25 @@
   position: absolute;
   right: 15px;
   top: 16px;
+  stroke: $black-lighter;
 }
 
 .form__input--email:disabled + .form__input-email-icon {
   stroke: $green;
 }
 
+// .form__input--email:invalid + .form__input-email-icon {
+//   stroke: $red;
+// }
+
 .form__input-tel-icon {
   position: absolute;
   right: 15px;
   top: 72px;
+  fill: $black;
 }
 
-.form__input--tel:disabled + .form__input-tel-icon path {
+.form__input--tel:disabled + .form__input-tel-icon {
   fill: $green;
 }
 
