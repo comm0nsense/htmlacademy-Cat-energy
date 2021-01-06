@@ -62,7 +62,7 @@
     opacity: 0.3;
   }
 
-  .site-nav__item--active {
+  .site-nav__item-link--active {
     border-bottom: 2px solid $green;
   }
 
@@ -89,7 +89,7 @@
     color: $white;
   }
 
-  .site-nav__item--index {
+  .site-nav__item-link--active.site-nav__item-link--index {
     border-bottom: 2px solid $white;
   }
 }

@@ -77,7 +77,7 @@
       <nav class="main-nav main-nav--index">
         <ul class="main-nav__list site-nav">
           <li class="site-nav__item">
-            <a class="site-nav__item-link site-nav__item--active site-nav__item-link--index" href="">Главная</a>
+            <a class="site-nav__item-link site-nav__item-link--active site-nav__item-link--index" href="">Главная</a>
           </li>
           <li class="site-nav__item">
             <a class="site-nav__item-link site-nav__item-link--index" href="catalog.html">Каталог продукции</a>
@@ -247,8 +247,10 @@
         <div class="contacts__wrapper contacts__wrapper--index">
           <h2 class="visually-hidden">Наш адрес</h2>
           <p class="contacts__slogan">Приглашаем <br> к сотрудничеству <br> дилеров!</p>
-          <p class="contacts__address">ул. Большая <br> Конюшенная, д. 19/8 <br>
-            Санкт-Петербург</p>
+          <div class="contacts__address">
+            <p class="contacts__address-details">ул. Большая <br> Конюшенная, д. 19/8 </p>
+            <p class="contacts__address-details"> Санкт-Петербург</p>
+          </div>
         </div>
       </div>
       <a class="contacts__details" href="#">
@@ -297,7 +299,7 @@
             <a class="social__link social__link--facebook" href="#">
               <span class="visually-hidden">Мы в Фейсбуке</span>
               <svg class="social__svg social__svg--facebook" width="22" height="22">
-                <use xlink href="#social__svg-facebook"></use>
+                <use xlink:href="#social__svg-facebook"></use>
               </svg>
             </a>
           </li>
@@ -307,7 +309,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">HTML Academy</span>
           <svg class="copyright___logo" width="27" height="34">
-            <use xlink href="#copyright__logo"></use>
+            <use xlink:href="#copyright__logo"></use>
           </svg>
         </a>
       </div>

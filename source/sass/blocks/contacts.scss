@@ -31,6 +31,10 @@
   width: 50%;
 }
 
+.contacts__address-details {
+  margin: 0;
+}
+
 .contacts__map {
   margin: 0 auto;
   display: block;
@@ -64,6 +68,9 @@
     line-height: 20px;
     width: calc(50% - 30px);
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
   }
 
   .contacts__map {
