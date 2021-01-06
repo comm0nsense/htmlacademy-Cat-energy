@@ -31,10 +31,6 @@
   width: 50%;
 }
 
-.contacts__address-details {
-  margin: 0;
-}
-
 .contacts__map {
   margin: 0 auto;
   display: block;
@@ -44,7 +40,7 @@
   .contacts__wrapper {
     padding-top: 65px;
     margin-bottom: 0;
-    padding-bottom: 62px;
+    padding-bottom: 60px;
     padding-left: 41px;
     padding-right: 41px;
   }
@@ -52,7 +48,7 @@
   .contacts__wrapper--index {
     // padding-left: 41px;
     // padding-right: 41px;
-    margin-bottom: 60px;
+    margin-bottom: 58px;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -68,9 +64,11 @@
     line-height: 20px;
     width: calc(50% - 30px);
     text-align: right;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
+  }
+
+  .contacts__city {
+    display: block;
+    margin-top: 17px;
   }
 
   .contacts__map {
