@@ -102,7 +102,7 @@
   stroke: $green;
 }
 
-.form__input--email:invalid + .form__input-email-icon {
+.form__input--email:invalid(:placeholder-shown) + .form__input-email-icon {
   stroke: $red;
 }
 
@@ -117,7 +117,7 @@
   fill: $green;
 }
 
-.form__input--tel:invalid + .form__input-tel-icon {
+.form__input--tel:invalid(:placeholder-shown) + .form__input-tel-icon {
   fill: $red;
 }
 
