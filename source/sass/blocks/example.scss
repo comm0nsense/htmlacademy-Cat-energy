@@ -303,7 +303,7 @@
   }
 
   .example__data-desc {
-    background-color: $grey-medium-light;
+    background-color: $grey-extra-light;
   }
 
   .example__costs {
@@ -311,6 +311,10 @@
     width: 100%;
     text-align: left;
     padding: 0;
+  }
+
+  .example__costs-description {
+    margin-right: 58px;
   }
 
   .example__slider-wrapper {
