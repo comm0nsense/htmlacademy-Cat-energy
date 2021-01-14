@@ -95,7 +95,7 @@ exports.sprite = sprite;
 const copy = () => {
   return gulp.src([
     "source/fonts/*.{woff2,woff}",
-    "source/img/**/*.{jpg,png,svg}"
+    // "source/img/**/*.{jpg,png,svg}"
   ],
     {
       base: "source"
@@ -167,6 +167,7 @@ exports.default = gulp.series(
     html,
     scripts,
     copy,
+    images,
     createWebp
   ),
   gulp.series(
