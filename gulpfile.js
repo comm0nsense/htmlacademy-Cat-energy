@@ -149,10 +149,11 @@ const build = gulp.series(
   clean,
   gulp.parallel(
     styles,
-    scripts,
-    html,
     sprite,
+    html,
+    scripts,
     copy,
+    images,
     createWebp
   )
 )
