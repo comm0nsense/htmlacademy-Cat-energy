@@ -28,7 +28,6 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  // flex-direction: flex-start;
   margin-bottom: 20px;
 }
 
@@ -72,12 +71,6 @@
   margin-bottom: 8px;
 }
 
-// .example__foto-wrapper {
-//   margin-bottom: 30px;
-//   position: relative;
-//   height: 267px;
-// }
-
 .example__foto-before {
   max-width: none;
   overflow: hidden;
@@ -104,7 +97,6 @@
 
 .example__cat-foto--fat {
   top: 32px;
-  // right: -15px;
 }
 
 .example__cat-foto--skinny {
@@ -211,10 +203,6 @@
     height: 520px;
   }
 
-  // .example__foto-before {
-  //   padding-top: 0;
-  // }
-
   .example__foto-after {
     background: linear-gradient(to bottom, $white 26.5%, $grey-medium-light 26.5%);
   }
@@ -222,12 +210,15 @@
   .example__cat-foto--fat {
     left: 15px;
     top: -4px;
+    width: 677px;
+    height: 520px;
   }
 
   .example__cat-foto--skinny {
-    // left: -10px;
     right: 57px;
     top: -5px;
+    width: 545px;
+    height: 520px;
   }
 
   .example__filter-wrapper {
