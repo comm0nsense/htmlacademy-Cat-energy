@@ -141,9 +141,8 @@
   @include fonts(400, 16px, 18px, $grey);
   text-transform: uppercase;
   height: 46px;
-  padding: 10px 13px;
   border: 1px solid $grey-lighter;
-  // margin-bottom: 13px;
+  padding: 10px 13px;
   flex-grow: 2;
   position: relative;
   appearance: none;
@@ -151,17 +150,12 @@
 }
 
 .form__input:hover {
-  border: 2px solid $grey-medium-light;
-  padding-left: 12px;
-}
-
-.form__input--textarea:hover {
-  padding-top: 9px;
-  padding-left: 13px;
+  border: 1px solid $grey-medium;
 }
 
 .form__input:focus {
   border: 2px solid $grey;
+  padding-left: 12px;
 }
 
 .form__button-wrapper {
@@ -186,6 +180,10 @@
   padding-left: 14px;
   padding-right: 13px;
   height: 150px;
+}
+
+.form__input--textarea:focus {
+  padding-top: 9px;
 }
 
 .form__list {
@@ -302,10 +300,6 @@
   .form__input::placeholder {
     font-size: 20px;
     line-height: 30px;
-  }
-
-  .form__input:hover {
-    padding-left: 17px;
   }
 
   .form__input:focus {

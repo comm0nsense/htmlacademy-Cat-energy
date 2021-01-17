@@ -31,9 +31,6 @@
   position: absolute;
   width: 14px;
   height: 14px;
-  // background-color: $green;
-  // width: 30px;
-  // height: 30px;
   background: radial-gradient($green, $green 14px, $white 30px);
   border-radius: 50%;
   left: 8px;
@@ -41,6 +38,10 @@
 }
 
 .radio__input:hover + .radio__label::before {
+  border: 1px solid $grey-extra-lighter;
+}
+
+.radio__input:focus + .radio__label::before {
   border: 1px solid $grey-extra-lighter;
 }
 
