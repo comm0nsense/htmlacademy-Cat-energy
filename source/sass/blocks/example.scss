@@ -310,22 +310,18 @@
 
   .example__slider-wrapper {
     width: 50%;
-    min-height: 656px;
+    min-height: auto;
+    height: auto;
     margin-top: 0;
     position: relative;
   }
 
-  .example__foto-wrapper {
-    min-height: 536px;
-    margin-bottom: 25px;
-  }
-
   .example__foto-before {
-    background: linear-gradient(to bottom, $white 30.5%, $grey-extra-light 30.5%);
+    background: linear-gradient(to bottom, $white 200px, $grey-extra-light 200px);
   }
 
   .example__foto-after {
-    background: linear-gradient(to bottom, $white 30.5%, $grey-medium-light 30.5%);
+    background: linear-gradient(to bottom, $white 200px, $grey-medium-light 200px);
     width: 47%;
   }
 
