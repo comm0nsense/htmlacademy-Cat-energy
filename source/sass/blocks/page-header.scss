@@ -26,39 +26,6 @@
   cursor: pointer;
 }
 
-.menu-button--closed .menu-button__icon::before {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 2px;
-  background-color: $black;
-  box-shadow: 0 9px 0 0 $black, 0 18px 0 0 $black;
-  left: 0;
-  top: 0;
-}
-
-.menu-button--opened .menu-button__icon {
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    width: 25px;
-    height: 2px;
-    background-color: $black;
-    left: 0;
-    top: 10px;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-}
-
 @media (min-width: $tablet-width) {
   .page-header--index {
     z-index: 1;
