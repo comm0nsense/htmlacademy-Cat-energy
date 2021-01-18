@@ -9,6 +9,12 @@
   padding: 0;
 }
 
+.main-nav--closed {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main-nav {
     padding-top: 17px;
