@@ -159,17 +159,17 @@
           </div>
 
           <div class="example__slider-wrapper">
-            <div class="example__foto-before">
+            <div class="example__photo-before">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/cat-fat-tablet.webp 1x, img/cat-fat-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/cat-fat-tablet.png 1x, img/cat-fat-tablet@2x.png 2x">
-                <img class="example__cat-foto example__cat-foto--fat" weight="280" height="229" src="img/cat-fat.png"
+                <img class="example__cat-photo example__cat-photo--fat" width="280" height="229" src="img/cat-fat.png"
                   srcset="img/cat-fat@2x.png 2x" alt="Фото упитанного кота">
               </picture>
             </div>
-            <div class="example__foto-after">
+            <div class="example__photo-after">
               <div class="example__after-wrapper">
                 <picture>
                   <source type="image/webp" media="(min-width: 768px)"
@@ -177,7 +177,7 @@
                   <source type="image/webp" srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/cat-skinny-tablet.png 1x, img/cat-skinny-tablet@2x.png 2x">
-                  <img class="example__cat-foto example__cat-foto--skinny" weight="264" height="252"
+                  <img class="example__cat-photo example__cat-photo--skinny" width="264" height="252"
                     src="img/cat-skinny.png" srcset="img/cat-skinny@2x.png 2x" alt="Фото худого кота">
                 </picture>
               </div>
@@ -186,7 +186,7 @@
               <div class="example__filter">
                 <label class="visually-hidden" for="before-after">Вес питомца</label>
                 <span class="example__before-after">Было</span>
-                <input class="filter" type="range" name="before-after" id="before-after" min="1%" max="100%" step="25%"
+                <input class="filter" type="range" name="before-after" id="before-after" min="1" max="100" step="1"
                   oninput="updateImageWidth(this.value)">
                 <span class="example__before-after">Стало</span>
               </div>

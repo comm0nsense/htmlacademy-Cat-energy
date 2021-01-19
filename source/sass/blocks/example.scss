@@ -71,13 +71,13 @@
   margin-bottom: 8px;
 }
 
-.example__foto-before {
+.example__photo-before {
   max-width: none;
   overflow: hidden;
   height: 100%;
 }
 
-.example__foto-after {
+.example__photo-after {
   max-width: none;
   position: absolute;
   top: 0;
@@ -88,23 +88,23 @@
   background-color: $grey-medium-light;
 }
 
-.example__cat-foto {
+.example__cat-photo {
   display: block;
   position: absolute;
   max-width: none;
   top: 0;
 }
 
-.example__cat-foto--fat {
+.example__cat-photo--fat {
   top: 32px;
 }
 
-.example__cat-foto--skinny {
+.example__cat-photo--skinny {
   top: 16px;
   right: -4px;
 }
 
-.example__foto-after::after {
+.example__photo-after::after {
   content: "";
   display: block;
   position: absolute;
@@ -198,23 +198,23 @@
     padding-top: 7px;
   }
 
-  .example__foto-wrapper {
+  .example__photo-wrapper {
     margin-bottom: 10px;
     height: 520px;
   }
 
-  .example__foto-after {
+  .example__photo-after {
     background: linear-gradient(to bottom, $white 26.5%, $grey-medium-light 26.5%);
   }
 
-  .example__cat-foto--fat {
+  .example__cat-photo--fat {
     left: 15px;
     top: -4px;
     width: 677px;
     height: 520px;
   }
 
-  .example__cat-foto--skinny {
+  .example__cat-photo--skinny {
     right: 57px;
     top: -5px;
     width: 545px;
@@ -229,7 +229,7 @@
     min-height: 630px;
   }
 
-  .example__item-foto {
+  .example__item-photo {
     width: 354px;
     height: 502px;
   }
@@ -315,21 +315,21 @@
     position: relative;
   }
 
-  .example__foto-before {
+  .example__photo-before {
     background: linear-gradient(to bottom, $white 200px, $grey-extra-light 200px);
   }
 
-  .example__foto-after {
+  .example__photo-after {
     background: linear-gradient(to bottom, $white 200px, $grey-medium-light 200px);
     width: 47%;
   }
 
-  .example__cat-foto--fat {
+  .example__cat-photo--fat {
     left: -39px;
     top: 3px;
   }
 
-  .example__cat-foto--skinny {
+  .example__cat-photo--skinny {
     right: 12px;
     top: 2px;
   }

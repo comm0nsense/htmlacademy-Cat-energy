@@ -22,6 +22,6 @@ navToggle.addEventListener('click', function () {
 // Slider
 
 const updateImageWidth = (val) => {
-  const imageWrapper = document.querySelector('.example__foto-after');
+  const imageWrapper = document.querySelector('.example__photo-after');
   imageWrapper.style.width = `${val}%`;
 }
