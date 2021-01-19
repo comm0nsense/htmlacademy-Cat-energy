@@ -150,17 +150,22 @@
     margin-bottom: 5px;
   }
 
+  .explanation__list {
+    justify-content: flex-start;
+  }
+
   .explanation__item {
     counter-increment: number;
     width: calc(25% - 60px);
     margin-bottom: 0;
     padding-right: 20px;
-    // z-index: 1;
+    margin-right: 80px;
   }
 
   .explanation__item:last-child {
     margin-bottom: 0;
     padding-right: 0;
+    margin-right: 0;
   }
 
   .explanation__item::after {

@@ -25,8 +25,8 @@ const styles = () => {
       autoprefixer(),
       csso()
     ]))
-    .pipe(sourcemap.write("."))
     .pipe(rename("style.min.css"))
+    .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
@@ -140,7 +140,7 @@ exports.reload = reload;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
-  gulp.watch("source/img/icons/*.svg", gulp.series(sprite, reload));
+  gulp.watch("source/js/**/*.js", gulp.series(scripts, reload));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
 

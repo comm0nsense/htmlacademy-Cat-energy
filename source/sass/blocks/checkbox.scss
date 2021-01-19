@@ -32,6 +32,10 @@
   border: 1px solid $grey-extra-lighter;
 }
 
+.checkbox__item-input:focus + .checkbox__item-label::before {
+  border: 1px solid $grey-extra-lighter;
+}
+
 .checkbox__item-input:disabled + .checkbox__item-label::before {
   border: 1px solid $grey-extra-lighter;
 }

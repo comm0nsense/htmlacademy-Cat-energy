@@ -18,6 +18,7 @@
 .promo__text-wrapper {
   min-height: 302px;
   margin-bottom: 138px;
+  padding-bottom: 145px;
 }
 
 .promo__title {
@@ -37,10 +38,7 @@
 
 .promo__image-can {
   position: absolute;
-  top: 166px;
-  // left: 0px;
-  // left: 50%;
-  // transform: translateX(50%);
+  bottom: 44px;
 }
 
 @media (min-width: $tablet-width) {
@@ -55,6 +53,7 @@
   .promo__text-wrapper {
     min-height: auto;
     margin-bottom: 49px;
+    padding-bottom: 0;
   }
 
   .promo__title {
@@ -103,10 +102,10 @@
 
   .promo__title {
     padding-left: 80px;
+    max-width: 500px;
   }
 
   .promo__description {
     padding-left: 80px;
-    // margin-bottom: 52px;
   }
 }

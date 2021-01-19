@@ -1,27 +1,24 @@
 /* stylelint-disable rule */
 .filter {
-  appearance: none; /* Hides the slider so that custom slider can be made */
-  width: 84px; /* Specific width is required for Firefox. */
-  background: transparent; /* Otherwise white in Chrome */
+  appearance: none;
+  width: 84px;
+  background: transparent;
   margin: 0;
 }
 
 .filter:focus {
-  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+  outline: none;
 }
 
 .filter::-ms-track {
   width: 100%;
   cursor: pointer;
-
-  /* Hides the slider so custom styles can be added */
   background: transparent;
   border-color: transparent;
   color: transparent;
 }
 
 //Thumb
-/* Special styling for WebKit/Blink */
 .filter::-webkit-slider-thumb {
   appearance: none;
   border: none;
@@ -30,11 +27,9 @@
   border-radius: 6px;
   background: $green;
   cursor: pointer;
-  // margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
   margin-top: 3px;
 }
 
-/* All the same stuff for Firefox */
 .filter::-moz-range-thumb {
   border: none;
   height: 6px;
@@ -78,7 +73,7 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
     background: radial-gradient($green, $green 4px, $white 5px);
     cursor: pointer;
-    margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    margin-top: -14px;
   }
 
   .filter::-moz-range-thumb {

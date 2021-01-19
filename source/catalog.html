@@ -6,39 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
-<body class="page__body">
-
-  <style>
-    @media (min-width: 320px) {
-      html {
-        background-image: url("img/c-mobile.png");
-        background-position: center top;
-        background-repeat: no-repeat;
-      }
-    }
-
-    @media (min-width: 768px) {
-      html {
-        background-image: url("img/c-tablet.png");
-        background-position: center top;
-        background-repeat: no-repeat;
-      }
-    }
-
-    @media (min-width: 1280px) {
-      html {
-        background-image: url("img/c-desktop.png");
-      }
-    }
-
-    body {
-      opacity: 1;
-    }
-
-  </style>
-
+<body class="page__body no-js">
   <header class="page-header">
     <div class="container page-header__wrapper page-header__wrapper--catalog">
       <div class="page-header__nav-wrapper">
@@ -53,13 +25,13 @@
           <span class="menu-button__icon"></span>
         </button>
       </div>
-      <nav class="main-nav main-nav">
+      <nav class="main-nav main-nav--opened">
         <ul class="main-nav__list site-nav">
           <li class="site-nav__item">
             <a class="site-nav__item-link" href="index.html">Главная</a>
           </li>
           <li class="site-nav__item">
-            <a class="site-nav__item-link site-nav__item-link--active" href="">Каталог продукции</a>
+            <a class="site-nav__item-link site-nav__item-link--active">Каталог продукции</a>
           </li>
           <li class="site-nav__item">
             <a class="site-nav__item-link" href="form.html">Подбор программы</a>
@@ -87,7 +59,8 @@
                       srcset="img/catalog-1-desktop.png 1x, img/catalog-1-desktop@2x.png 2x">
                     <source media="(min-width: 768px)"
                       srcset="img/catalog-1-tablet.png 1x, img/catalog-1-tablet@2x.png 2x">
-                    <img class="product__link-image" src="img/catalog-1.png" srcset="img/catalog-1@2x.png 2x"
+                    <img class="product__link-image" src="img/catalog-1.png" width="140" height="112"
+                      srcset="img/catalog-1@2x.png 2x"
                       alt="Пластиковая банка небольшого размера в оранжевом дизайне с изображением курицы и указанием плана питания, основного игредиента и веса">
                   </picture>
                 </a>
@@ -130,7 +103,8 @@
                       srcset="img/catalog-2-desktop.png 1x, img/catalog-2-desktop@2x.png 2x">
                     <source media="(min-width: 768px)"
                       srcset="img/catalog-2-tablet.png 1x, img/catalog-2-tablet@2x.png 2x">
-                    <img class="product__link-image" src="img/catalog-2.png" srcset="img/catalog-2@2x.png 2x"
+                    <img class="product__link-image" src="img/catalog-2.png" width="140" height="112"
+                      srcset="img/catalog-2@2x.png 2x"
                       alt="Пластиковая банка большого размера в оранжевом дизайне с изображением курицы и указанием плана питания, основного игредиента и веса">
                   </picture>
                 </a>
@@ -173,7 +147,8 @@
                       srcset="img/catalog-3-desktop.png 1x, img/catalog-3-desktop@2x.png 2x">
                     <source media="(min-width: 768px)"
                       srcset="img/catalog-3-tablet.png 1x, img/catalog-3-tablet@2x.png 2x">
-                    <img class="product__link-image" src="img/catalog-3.png" srcset="img/catalog-3@2x.png 2x"
+                    <img class="product__link-image" src="img/catalog-3.png" width="140" height="112"
+                      srcset="img/catalog-3@2x.png 2x"
                       alt="Пластиковая банка небольшого размера в зеленом дизайне с изображением кусочков запеченой рыбы и указанием плана питания, основного игредиента и веса">
                   </picture>
                 </a>
@@ -216,7 +191,8 @@
                       srcset="img/catalog-4-desktop.png 1x, img/catalog-4-desktop@2x.png 2x">
                     <source media="(min-width: 768px)"
                       srcset="img/catalog-4-tablet.png 1x, img/catalog-4-tablet@2x.png 2x">
-                    <img class="product__link-image" src="img/catalog-4.png" srcset="img/catalog-4@2x.png 2x"
+                    <img class="product__link-image" src="img/catalog-4.png" width="140" height="112"
+                      srcset="img/catalog-4@2x.png 2x"
                       alt="Пластиковая банка большого размера в зеленом дизайне с изображением кусочков запеченой рыбы и указанием плана питания, основного игредиента и веса">
                   </picture>
                 </a>
@@ -259,7 +235,8 @@
                       srcset="img/catalog-5-desktop.png 1x, img/catalog-5-desktop@2x.png 2x">
                     <source media="(min-width: 768px)"
                       srcset="img/catalog-5-tablet.png 1x, img/catalog-5-tablet@2x.png 2x">
-                    <img class="product__link-image" src="img/catalog-5.png" srcset="img/catalog-5@2x.png 2x"
+                    <img class="product__link-image" src="img/catalog-5.png" width="140" height="112"
+                      srcset="img/catalog-5@2x.png 2x"
                       alt="Пластиковая банка небольшого размера в синем дизайне с изображением гречки, помидора. Указани план питания, основной игредиент и вес">
                   </picture>
                 </a>
@@ -302,7 +279,8 @@
                       srcset="img/catalog-6-desktop.png 1x, img/catalog-6-desktop@2x.png 2x">
                     <source media="(min-width: 768px)"
                       srcset="img/catalog-6-tablet.png 1x, img/catalog-6-tablet@2x.png 2x">
-                    <img class="product__link-image" src="img/catalog-6.png" srcset="img/catalog-6@2x.png 2x"
+                    <img class="product__link-image" src="img/catalog-6.png" width="140" height="112"
+                      srcset="img/catalog-6@2x.png 2x"
                       alt="Пластиковая банка большого размера в синем дизайне с изображением гречки, помидора. Указани план питания, основной игредиент и вес">
                   </picture>
                 </a>
@@ -345,7 +323,8 @@
                       srcset="img/catalog-7-desktop.png 1x, img/catalog-7-desktop@2x.png 2x">
                     <source media="(min-width: 768px)"
                       srcset="img/catalog-7-tablet.png 1x, img/catalog-7-tablet@2x.png 2x">
-                    <img class="product__link-image" src="img/catalog-7.png" srcset="img/catalog-7@2x.png 2x"
+                    <img class="product__link-image" src="img/catalog-7.png" width="140" height="112"
+                      srcset="img/catalog-7@2x.png 2x"
                       alt="Пластиковая банка небольшого размера в фиолетовом дизайне с изображением риса и овощей. Указани план питания, основной игредиент и вес">
                   </picture>
                 </a>
@@ -432,21 +411,21 @@
             <p class="gift__slogan">Закажите все<br> и получите чехол для <br> кота в подарок!</p>
           </div>
         </div>
+      </section>
     </div>
-    </section>
     <section class="contacts">
       <div class="container container--footer-contacts">
         <div class="contacts__wrapper">
           <h2 class="visually-hidden">Наш адрес</h2>
           <p class="contacts__slogan">Приглашаем <br> к сотрудничеству <br> дилеров!</p>
-          <p class="contacts__address">ул. Большая <br> Конюшенная, д. 19/8 </br>
+          <p class="contacts__address">ул. Большая <br> Конюшенная, д. 19/8 <br>
             <span class="contacts__city"> Санкт-Петербург</span> </p>
         </div>
       </div>
       <div class="contacts__details">
         <iframe class="contacts__iframe"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1923.8426143255826!2d30.320778482801373!3d59.93875707852989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1610141087637!5m2!1sen!2sru"
-          width="100%" height="362" style="border: 0;" allowfullscreen="" aria-hidden="false"
+          style="border: 0;" allowfullscreen="" aria-hidden="false"
           title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" tabindex="0"></iframe>
         <picture>
           <source type="image/webp" media="(min-width: 1280px)"
@@ -456,8 +435,8 @@
           <source type="image/webp" srcset="img/location.webp 1x, img/location@2x.webp 2x">
           <source media="(min-width: 1280px)" srcset="img/desktop-location.jpg 1x, img/desktop-location@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/tablet-location.jpg 1x, img/tablet-location@2x.jpg 2x">
-          <img class="contacts__map" src="img/location.jpg" srcset="img/location@2x.jpg 2x"
-            alt="Карта проезда в офис Кэт Энерджи">
+          <img class="contacts__map" src="img/location.jpg" width="320" height="362" loading="lazy"
+            srcset="img/location@2x.jpg 2x" alt="Карта проезда в офис Кэт Энерджи">
         </picture>
       </div>
     </section>
@@ -507,6 +486,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

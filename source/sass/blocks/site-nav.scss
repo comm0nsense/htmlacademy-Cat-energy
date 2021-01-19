@@ -36,6 +36,7 @@
 @media (min-width: $tablet-width) {
   .site-nav {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-end;
   }
@@ -43,7 +44,6 @@
   .site-nav__item {
     @include fonts(400, 18px, 24px, $black);
     margin-left: 35px;
-    // padding-bottom: 5px;
     padding-bottom: 0;
     padding-top: 0;
     border: none;
@@ -54,11 +54,11 @@
     display: none;
   }
 
-  .site-nav__item:hover {
+  .site-nav__item:hover :not(.site-nav__item-link--active) {
     opacity: 0.6;
   }
 
-  .site-nav__item:active {
+  .site-nav__item:active :not(.site-nav__item-link--active) {
     opacity: 0.3;
   }
 

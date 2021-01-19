@@ -1,9 +1,9 @@
 .gift {
-  background-image: url("../img/gift-photo-mobile.jpg");
+  background: $green url("../img/gift-photo-mobile.jpg");
   min-height: 289px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background: $green url("../img/gift-photo-mobile@2x.jpg");
     background-size: auto auto;
   }
 }
