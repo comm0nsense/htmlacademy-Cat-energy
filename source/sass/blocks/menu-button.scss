@@ -2,7 +2,7 @@
   display: none;
 }
 
-.menu-button--closed .menu-button__icon::before {
+.menu-button--opened .menu-button__icon::before {
   content: "";
   position: absolute;
   width: 24px;
@@ -13,7 +13,7 @@
   top: 0;
 }
 
-.menu-button--opened .menu-button__icon {
+.menu-button--closed .menu-button__icon {
   &::before,
   &::after {
     content: "";
