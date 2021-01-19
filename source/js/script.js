@@ -1,7 +1,10 @@
 // Mobile Menu
+
+document.body.classList.remove('no-js');
+
 const mainNav = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.page-header__nav-toggle');
-mainNav.classList.add('main-nav-closed');
+mainNav.classList.add('main-nav--closed');
 
 navToggle.addEventListener('click', function () {
 
@@ -19,6 +22,6 @@ navToggle.addEventListener('click', function () {
 // Slider
 
 const updateImageWidth = (val) => {
-  const imageWrapper = document.querySelector('.example__cat-foto--skinny');
-  imageWrapper.style.width = `${val}$`;
+  const imageWrapper = document.querySelector('.example__foto-after');
+  imageWrapper.style.width = `${val}%`;
 }

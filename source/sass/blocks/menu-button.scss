@@ -1,3 +1,7 @@
+.no-js .menu-button__icon {
+  display: none;
+}
+
 .menu-button--closed .menu-button__icon::before {
   content: "";
   position: absolute;
