@@ -4,9 +4,10 @@ name: Project test & build
 # в данном случае это push и pull_request, в ветку prod
 on:
   push:
-    branches: [ prod ]
+    branches: 
+    - master
   pull_request:
-    branches: [ prod ]
+    branches: '*'
 
 # выполняемые действия
 jobs:
@@ -18,7 +19,7 @@ jobs:
     # в github actions будет выводиться название шага, и процессы
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v2.3.1
+        uses: actions/checkout@master
         with:
           persist-credentials: false
 
